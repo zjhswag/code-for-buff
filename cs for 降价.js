@@ -4,6 +4,7 @@ var price;
 var spr;  
 var ss;
 var g;
+var sb;
 var start=function()
 {
     click("最新上架");
