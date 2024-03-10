@@ -485,7 +485,7 @@ function Observer() {
 
 var mainstrat=function(){
 
- //setScreenMetrics(1080,2110);
+// setScreenMetrics(1080,2110);
     launchApp("网易BUFF");
     click("关闭");
     click("创建报价");
@@ -553,7 +553,7 @@ start60();
         //模拟器
         if(j==0) {press(100,700,1);}
     else {
-                sleep(200); 
+                sleep(300); 
                 click(608,445,851,734);
         }
     //  for(var j=0;j<2;j++)
@@ -931,7 +931,7 @@ else if(textContains("受限").exists())//915
             } 
             breakbuy();
         }//
-     else if(textContains("秋季方巾").exists()||textContains("型 | 粉碎者").exists()||textContains("） | 轨道").exists()||textContains("型 | 粉红 DDPAT").exists()||textContains("凤凰冥灯").exists()||textContains("） | 惊惧骷髅").exists()||textContains("法玛斯（StatTrak™） | 电子脉冲").exists()||textContains("警告").exists()||textContains("富士山").exists()||textContains("黄铜").exists()||textContains("G | 力矩").exists()||textContains("） | 粉碎者").exists()||textContains("型 | 圆影").exists())
+     else if(textContains("秋季方巾").exists()||textContains("型 | 粉碎者").exists()||textContains("） | 轨道").exists()||textContains("型 | 粉红 DDPAT").exists()||textContains("凤凰冥灯").exists()||textContains("） | 惊惧骷髅").exists()||textContains("法玛斯（StatTrak™） | 电子脉冲").exists()||textContains("警告").exists()||textContains("9 | 富士山").exists()||textContains("黄铜").exists()||textContains("G | 力矩").exists()||textContains("） | 粉碎者").exists()||textContains("型 | 圆影").exists())
      {  
          buy001();
          buy002();
@@ -954,7 +954,7 @@ else if(textContains("受限").exists())//915
        toast('00-01 啊');
        breakbuy();      
     }
-     else if(textContains("崩络克").exists()||textContains("蚀刻领主").exists()||textContains("混合体").exists()||textContains("） | 隐伏帝王龙").exists()||textContains("血红蛋白").exists()||textContains("射线").exists()||textContains("金砖").exists()||textContains("幕后主谋").exists()||textContains("犯罪现场").exists()||textContains("4 | 狮鹫").exists()||textContains("花纹钢板").exists()||textContains("铜色星系").exists()||textContains("钛片").exists()||textContains("错觉").exists()||textContains("橙红安").exists()||textContains("） | 地狱门票").exists()||textContains("红色 DD").exists()||textContains("7 | 海之泡沫").exists()||textContains("） | 浮生如梦").exists()||textContains("） | 轻轨").exists()||textContains("鹰 | 轻轨").exists()||textContains("夜空沙暴").exists()||textContains("雅藤如嫣").exists()||textContains("） | 狮鹫").exists()||textContains("） | 火卫一").exists()||textContains("） | 钢铁禁锢").exists()||textContains("富兰克林").exists()||textContains("版 | 地狱门票").exists()||textContains("烧尽").exists()||textContains("4 | 杀意大名").exists()||textContains("遗产").exists()||textContains("） | 特克卢").exists()||textContains("0 | 翡翠色调").exists()||textContains("型 | 翼蜥").exists()||textContains("地狱看门犬").exists()||textContains("） | 蠕虫之神").exists()||textContains("太古传说").exists()||textContains("远古幻想").exists()||textContains("鬼脸天蛾").exists()||textContains("） | 祥和之翼").exists()||textContains("P | 猫猫狗狗").exists()||textContains("） | 夜无眠").exists()||textContains("型 | 夜无眠").exists())
+     else if(textContains("模拟输入").exists()||textContains("笑一个").exists()||textContains("崩络克").exists()||textContains("蚀刻领主").exists()||textContains("混合体").exists()||textContains("） | 隐伏帝王龙").exists()||textContains("血红蛋白").exists()||textContains("射线").exists()||textContains("金砖").exists()||textContains("幕后主谋").exists()||textContains("犯罪现场").exists()||textContains("4 | 狮鹫").exists()||textContains("花纹钢板").exists()||textContains("铜色星系").exists()||textContains("钛片").exists()||textContains("错觉").exists()||textContains("橙红安").exists()||textContains("） | 地狱门票").exists()||textContains("红色 DD").exists()||textContains("7 | 海之泡沫").exists()||textContains("） | 浮生如梦").exists()||textContains("） | 轻轨").exists()||textContains("鹰 | 轻轨").exists()||textContains("夜空沙暴").exists()||textContains("雅藤如嫣").exists()||textContains("） | 狮鹫").exists()||textContains("） | 火卫一").exists()||textContains("） | 钢铁禁锢").exists()||textContains("富兰克林").exists()||textContains("版 | 地狱门票").exists()||textContains("烧尽").exists()||textContains("4 | 杀意大名").exists()||textContains("遗产").exists()||textContains("） | 特克卢").exists()||textContains("0 | 翡翠色调").exists()||textContains("型 | 翼蜥").exists()||textContains("地狱看门犬").exists()||textContains("） | 蠕虫之神").exists()||textContains("太古传说").exists()||textContains("远古幻想").exists()||textContains("鬼脸天蛾").exists()||textContains("） | 祥和之翼").exists()||textContains("P | 猫猫狗狗").exists()||textContains("） | 夜无眠").exists()||textContains("型 | 夜无眠").exists())
      //||textContains("） | 夜无眠").exists()
      {
         toast(' only 00'); 
@@ -990,7 +990,7 @@ else if(textContains("受限").exists())//915
          }
          } breakbuy(); 
         }
-     else if(textContains("牛 | 水蓝条纹").exists()||textContains("） | 海斗士").exists()||textContains("塔 | 海斗士").exists()||textContains("） | 皇家军团").exists()||textContains("型 | 皇家军团").exists()||textContains("指挥").exists()||textContains("8 | 幽灵战士").exists()||textContains("皇室伴侣").exists()||textContains("0 | 炽热").exists()||textContains("） | 探员").exists()||textContains("） | 手炮").exists()||textContains("P | 亡灵之主").exists()||textContains("） | 酸蚀").exists()||textContains("冷石").exists()||textContains("型 | 闪回").exists()||textContains("斯 | ZX81").exists()||textContains("） | 圆影").exists()||textContains("4 | 星级").exists()||textContains("鹰 | 后发制人").exists()||textContains("） | 猫猫狗狗").exists()||textContains("消音型（StatTrak™） | 闪回").exists()||textContains("模拟输入").exists()||textContains("笑一个").exists()||textContains("7 | 墨岩").exists())//
+     else if(textContains("牛 | 水蓝条纹").exists()||textContains("） | 海斗士").exists()||textContains("塔 | 海斗士").exists()||textContains("） | 皇家军团").exists()||textContains("型 | 皇家军团").exists()||textContains("指挥").exists()||textContains("8 | 幽灵战士").exists()||textContains("皇室伴侣").exists()||textContains("0 | 炽热").exists()||textContains("） | 探员").exists()||textContains("） | 手炮").exists()||textContains("P | 亡灵之主").exists()||textContains("） | 酸蚀").exists()||textContains("冷石").exists()||textContains("型 | 闪回").exists()||textContains("斯 | ZX81").exists()||textContains("） | 圆影").exists()||textContains("4 | 星级").exists()||textContains("鹰 | 后发制人").exists()||textContains("） | 猫猫狗狗").exists()||textContains("消音型（StatTrak™） | 闪回").exists()||textContains("7 | 墨岩").exists())//
      //只买0.07 和0.00  ||textContains("） | 速递").exists()||textContains("彼岸花").exists()
      {
          toast('00-07');         
@@ -1002,7 +1002,7 @@ else if(textContains("受限").exists())//915
         toast('00 07-08');
         breakbuy();
     }
-    else if(textContains("） | 星级").exists()||textContains("） | 三巨头").exists()||textContains("） | 经济").exists()||textContains("） | 黯翼").exists()||textContains("） | 疯狂老八").exists()||textContains("7 | 炽热").exists()||textContains("） | 北冥有鱼").exists()||textContains("） | 魅惑").exists()||textContains("塔 | 食人花").exists())
+    else if(textContains("） | 星级").exists()||textContains("） | 三巨头").exists()||textContains("） | 黯翼").exists()||textContains("） | 疯狂老八").exists()||textContains("7 | 炽热").exists()||textContains("） | 北冥有鱼").exists()||textContains("） | 魅惑").exists()||textContains("塔 | 食人花").exists())
     {
         buy008();
         buy009();    
@@ -1035,7 +1035,7 @@ else if(textContains("受限").exists())//915
          }
          } breakbuy(); } 
       
-   else  if(textContains("净化者").exists()||textContains("版 | 闪回").exists()||textContains("星 | 狂野").exists()||textContains("夫 | 狮子鱼").exists()||textContains("5 | 白狼").exists()||textContains("7 | SWAG").exists()||textContains("7 | 石雕").exists()||textContains("5 | 曝光").exists()||textContains("3 | 幻影").exists()||textContains("9 | 焦油缠绕").exists()||textContains("0 | 战争手柄").exists()||textContains("9 | 兄弟连").exists()||textContains("D | 猛烈冲锋").exists()||textContains("） | 动力装").exists()||textContains("） | 战火重").exists()||textContains("） | 红鹰").exists()||textContains("） | 先驱").exists()||textContains("5 | 先驱").exists()||textContains("星 | 毒蜥").exists()||textContains("1 | 毒刺").exists()||textContains("4 | 行尸攻").exists()||textContains("1 | 梦之林地").exists()||textContains("9 | 阿兹特克").exists()||textContains("7 | 好兄弟").exists()||textContains("5 | 塑胶炸弹").exists()||textContains("） | 一见青心").exists()||textContains("枪 | 蕉").exists()||textContains("0 | 元女王").exists()||textContains("） | 行尸攻").exists()||textContains("） | 梦之林地").exists()||textContains("） | 影魔").exists()||textContains("随机存取").exists())//||textContains("毒刺").exists()||textContains("4 | 五彩斑驳").exists()
+   else  if(textContains("净化者").exists()||textContains("版 | 闪回").exists()||textContains("星 | 狂野").exists()||textContains("夫 | 狮子鱼").exists()||textContains("5 | 白狼").exists()||textContains("7 | SWAG").exists()||textContains("7 | 石雕").exists()||textContains("5 | 曝光").exists()||textContains("3 | 幻影").exists()||textContains("9 | 焦油缠绕").exists()||textContains("0 | 战争手柄").exists()||textContains("9 | 兄弟连").exists()||textContains("D | 猛烈冲锋").exists()||textContains("） | 动力装").exists()||textContains("） | 战火重").exists()||textContains("） | 红鹰").exists()||textContains("） | 先驱").exists()||textContains("5 | 先驱").exists()||textContains("星 | 毒蜥").exists()||textContains("1 | 毒刺").exists()||textContains("4 | 行尸攻").exists()||textContains("1 | 梦之林地").exists()||textContains("9 | 阿兹特克").exists()||textContains("7 | 好兄弟").exists()||textContains("5 | 塑胶炸弹").exists()||textContains("） | 一见青心").exists()||textContains("枪 | 蕉").exists()||textContains("0 | 元女王").exists()||textContains("） | 行尸攻").exists()||textContains("） | 梦之林地").exists()||textContains("随机存取").exists())//||textContains("毒刺").exists()||textContains("4 | 五彩斑驳").exists()
          {
             buy002();
             buy003();
@@ -1062,7 +1062,7 @@ else if(textContains("受限").exists())//915
            toast('00-03,07-10');
            breakbuy();
          }
-    else if(textContains("7 | 北冥有鱼").exists()||textContains("5 | 猛虎").exists()||textContains("9 | 翠绿箭").exists()||textContains("4 | 四季").exists()||textContains("0 | 绝界之行").exists()||textContains("5 | 支架").exists()||textContains("） | 路霸").exists()||textContains("MAC-10（StatTrak™） | 炽热").exists()||textContains("守护者").exists()||textContains("0 | 孔雀石").exists()||textContains("0 | 翼击").exists()||textContains("） | 深红海啸").exists()||textContains("） | 七彩斑斓").exists()||textContains("7 | 七彩斑斓").exists()||textContains("5 | 金铋辉煌").exists()||textContains("） | 兄弟连").exists()||textContains("8 | 抖枪").exists()||textContains("7 | 权力之心").exists()||textContains("星 | 玩具士兵").exists()||textContains("5 | 经济").exists()||textContains("公路杀手").exists()||textContains("R | 深红海啸").exists()||textContains("0 | 权力之心").exists()||textContains("R | 火线冲锋").exists()||textContains("） | 翼击").exists()||textContains("） | 树蝰").exists())//textContains("枪 | 疯狂老八").exists()||
+    else if(textContains("7 | 北冥有鱼").exists()||textContains("5 | 猛虎").exists()||textContains("9 | 翠绿箭").exists()||textContains("4 | 四季").exists()||textContains("0 | 绝界之行").exists()||textContains("5 | 支架").exists()||textContains("） | 路霸").exists()||textContains("MAC-10（StatTrak™） | 炽热").exists()||textContains("守护者").exists()||textContains("0 | 孔雀石").exists()||textContains("0 | 翼击").exists()||textContains("） | 深红海啸").exists()||textContains("） | 七彩斑斓").exists()||textContains("7 | 七彩斑斓").exists()||textContains("5 | 金铋辉煌").exists()||textContains("） | 兄弟连").exists()||textContains("8 | 抖枪").exists()||textContains("7 | 权力之心").exists()||textContains("星 | 玩具士兵").exists()||textContains("5 | 经济").exists()||textContains("公路杀手").exists()||textContains("R | 深红海啸").exists()||textContains("7 | 翡翠细条纹").exists()||textContains("0 | 权力之心").exists()||textContains("R | 火线冲锋").exists()||textContains("） | 翼击").exists()||textContains("） | 树蝰").exists()||textContains("） | 经济").exists())//textContains("枪 | 疯狂老八").exists()||
     {
         buy008();
         toast('00-01,07-08');
@@ -1101,7 +1101,7 @@ else if(textContains("受限").exists())//915
     //     toast('00-01,07-09');
     //     breakbuy();
     // }
-    else if(textContains("） | 铋晶体").exists()||textContains("R | 凤凰商号").exists()||textContains("0 | 魅惑").exists()||textContains("G | 贵族").exists()||textContains("枪 | 聚光灯").exists()||textContains("9 | 战火重").exists()||textContains("5 | 红鹰").exists()||textContains("） | 死亡主宰").exists()||textContains("） | 朝枪夕拾").exists()||textContains("） | 三位一体").exists()||textContains("） | 红宝石毒镖").exists()||textContains("0 | 超新星").exists()||textContains("） | 都市冲击").exists()||textContains("） | 超新星").exists()||textContains("UMP-45（StatTrak™） | 城里的月光").exists()||textContains("影魔").exists()||textContains("） | 炼狱小镇").exists()||textContains("7 | 速递").exists()||textContains("9 | 星云十字军").exists()||textContains("7 | 翡翠细条纹").exists()||textContains("） | 高斯").exists()||textContains("拉美").exists()||textContains("） | 阿兹特克").exists()||textContains("枪 | 启示录").exists()||textContains("） | 五彩斑驳").exists()||textContains("） | 信号灯").exists()||textContains("） | 孔雀石").exists())//
+    else if(textContains("） | 铋晶体").exists()||textContains("R | 凤凰商号").exists()||textContains("0 | 魅惑").exists()||textContains("G | 贵族").exists()||textContains("枪 | 聚光灯").exists()||textContains("9 | 战火重").exists()||textContains("5 | 红鹰").exists()||textContains("） | 死亡主宰").exists()||textContains("） | 朝枪夕拾").exists()||textContains("） | 三位一体").exists()||textContains("） | 红宝石毒镖").exists()||textContains("0 | 超新星").exists()||textContains("） | 都市冲击").exists()||textContains("） | 超新星").exists()||textContains("UMP-45（StatTrak™） | 城里的月光").exists()||textContains("影魔").exists()||textContains("） | 炼狱小镇").exists()||textContains("7 | 速递").exists()||textContains("9 | 星云十字军").exists()||textContains("） | 高斯").exists()||textContains("拉美").exists()||textContains("） | 阿兹特克").exists()||textContains("枪 | 启示录").exists()||textContains("） | 五彩斑驳").exists()||textContains("） | 信号灯").exists()||textContains("） | 孔雀石").exists()||textContains("） | 影魔").exists())//
     {
         buy002();
         buy008();
