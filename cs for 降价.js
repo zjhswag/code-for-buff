@@ -721,7 +721,7 @@ start2();
        toast('00-01,07-10');
         breakbuy();
      }
-     else if(textContains("版 | 小绿怪").exists()||textContains("7 | 童话城堡").exists()||textContains("巨铁").exists()||textContains("弗卢克斯").exists()||textContains("星 | 暴怒野兽").exists()||textContains("） | 么么").exists())//||textContains("7 | 幽幻深渊").exists()
+     else if(textContains("7 | 童话城堡").exists()||textContains("巨铁").exists()||textContains("弗卢克斯").exists()||textContains("星 | 暴怒野兽").exists()||textContains("） | 么么").exists())//||textContains("7 | 幽幻深渊").exists()
      {
         buy002();
         buy007();
@@ -827,7 +827,7 @@ start2();
               toast('00-03,07-10');
               breakbuy();
           }
-          else if(textContains("红色层压板").exists()||textContains("） | 荒野公主").exists()||textContains("） | 买定离手").exists()||textContains("） | 樱花").exists()||textContains("G | 燕群").exists()||textContains("0 | 往日行动").exists()||textContains("G | 汪之萌杀").exists()||textContains("） | 野蛮剑齿虎").exists()||textContains("UMP-45（StatTrak™） | 动量").exists()||textContains("） | 血腥运动").exists()||textContains("0 | 二西莫夫").exists()||textContains("银装素裹").exists()||textContains("） | 正义").exists()||textContains("） | 灯神").exists()||textContains("4 | 要抱抱").exists()||textContains("埋葬之影").exists()||textContains("7 | 正义").exists()||textContains("0 | 迷人幻象").exists()||textContains("枪 | 么么").exists())      
+          else if(textContains("斯 | 目皆转睛").exists()||textContains("7 | 幽幻深渊").exists()||textContains("红色层压板").exists()||textContains("） | 荒野公主").exists()||textContains("） | 买定离手").exists()||textContains("） | 樱花").exists()||textContains("G | 燕群").exists()||textContains("0 | 往日行动").exists()||textContains("G | 汪之萌杀").exists()||textContains("） | 野蛮剑齿虎").exists()||textContains("UMP-45（StatTrak™） | 动量").exists()||textContains("） | 血腥运动").exists()||textContains("0 | 二西莫夫").exists()||textContains("银装素裹").exists()||textContains("） | 正义").exists()||textContains("） | 灯神").exists()||textContains("4 | 要抱抱").exists()||textContains("4 | 齿仙").exists()||textContains("埋葬之影").exists()||textContains("7 | 正义").exists()||textContains("0 | 迷人幻象").exists()||textContains("枪 | 么么").exists())      
           {
             buy003();
             buy009();
@@ -835,7 +835,7 @@ start2();
             toast('00-03,07-09');
             breakbuy();
           }
-   else if(textContains("斯 | 目皆转睛").exists()||textContains("7 | 幽幻深渊").exists()||textContains("塔 | 瓜瓜").exists()||textContains("） | 爆裂食物").exists()||textContains("） | 要抱抱").exists()||textContains("） | 摩登时代").exists()||textContains("） | 齿仙").exists()||textContains("） | 浅坟").exists()||textContains("） | 气密").exists()||textContains("） | 席德").exists()||textContains("星 | 樱花").exists()||textContains("） | 相柳").exists()||textContains("G | 席德.米德").exists()||textContains("P | 死神").exists()||textContains("0 | 浅坟").exists()||textContains("枪 | 荒野公主").exists()||textContains("9 | 爆裂食物").exists()||textContains("5 | 动量").exists()||textContains("D | 磷光体").exists()||textContains("7 | 复仇者").exists()||textContains("P | 金粉").exists()||textContains("牛 | 买定离手").exists()||textContains("枪 | 美洲驼炮").exists()||textContains("G | 湖怪鸟").exists()||textContains("0 | 血腥运动").exists()||textContains("5 | 野蛮剑齿虎").exists()||textContains("4 | 齿仙").exists()||textContains("型 | 摩登时代").exists())//席德
+   else if(textContains("塔 | 瓜瓜").exists()||textContains("） | 爆裂食物").exists()||textContains("） | 要抱抱").exists()||textContains("） | 摩登时代").exists()||textContains("） | 齿仙").exists()||textContains("） | 浅坟").exists()||textContains("） | 席德").exists()||textContains("星 | 樱花").exists()||textContains("） | 相柳").exists()||textContains("G | 席德.米德").exists()||textContains("P | 死神").exists()||textContains("0 | 浅坟").exists()||textContains("枪 | 荒野公主").exists()||textContains("9 | 爆裂食物").exists()||textContains("5 | 动量").exists()||textContains("D | 磷光体").exists()||textContains("7 | 复仇者").exists()||textContains("P | 金粉").exists()||textContains("牛 | 买定离手").exists()||textContains("枪 | 美洲驼炮").exists()||textContains("G | 湖怪鸟").exists()||textContains("0 | 血腥运动").exists()||textContains("5 | 野蛮剑齿虎").exists()||textContains("型 | 摩登时代").exists())//席德
           {
             buy003(); 
             buy008();
@@ -887,7 +887,7 @@ start2();
         breakbuy();
     }
 
-    else if(textContains("0 | 玩具盒子").exists()||textContains("5 | 黄夹克").exists()||textContains("0 | 精雕木刻").exists()||textContains("） | 黄夹克").exists()||textContains("） | 复仇者").exists()||textContains("斯 | 灯神").exists())//||textContains("G | 燕群").exists()
+    else if(textContains("版 | 小绿怪").exists()||textContains("0 | 玩具盒子").exists()||textContains("5 | 黄夹克").exists()||textContains("0 | 精雕木刻").exists()||textContains("） | 黄夹克").exists()||textContains("） | 复仇者").exists()||textContains("斯 | 灯神").exists())//||textContains("G | 燕群").exists()
     {
         buy008();
         buy009();
