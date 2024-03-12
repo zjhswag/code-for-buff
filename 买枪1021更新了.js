@@ -311,38 +311,38 @@ var mainstrat=function(){
         id("drawer_icon").findOne().click();
     }
     //模拟器
-  click("最新上架");
-  click(948,204,1080,325);
+//   click("最新上架");
+//   click(948,204,1080,325);
 
-    while(!click("品质"));
-    while(!click("军规"));
-    while(!click("类别"));
-    while(!click("普通"));
-    click(36,508,420,600);
-    while(!click("外观"));
-    while(!click("崭新出厂"));
-    while(!click("价格区间"));
-    setText(0,"0");
-    setText(1,"90");
-    while(!click("完成"));
-    toast('处理完成  开始扫货');
-    sleep("1500");
+//     while(!click("品质"));
+//     while(!click("军规"));
+//     while(!click("类别"));
+//     while(!click("普通"));
+//     click(36,508,420,600);
+//     while(!click("外观"));
+//     while(!click("崭新出厂"));
+//     while(!click("价格区间"));
+//     setText(0,"0");
+//     setText(1,"90");
+//     while(!click("完成"));
+//     toast('处理完成  开始扫货');
+//     sleep("1500");
 
-    // click("最新上架");
-    //   click(948,216,1080,337);
-    //     while(!click("品质"));
-    //     while(!click("军规"));
-    //     while(!click("类别"));
-    //     while(!click("普通"));
-    //     click(36,520,420,612);
-    //     while(!click("外观"));
-    //     while(!click("崭新出厂"));
-    //     while(!click("价格区间"));
-    //     setText(0,"0");
-    //     setText(1,"90");
-    //     while(!click("完成"));
-    //     toast('处理完成  开始扫货');
-    //     sleep("1500");
+    click("最新上架");
+      click(948,216,1080,337);
+        while(!click("品质"));
+        while(!click("军规"));
+        while(!click("类别"));
+        while(!click("普通"));
+        click(36,520,420,612);
+        while(!click("外观"));
+        while(!click("崭新出厂"));
+        while(!click("价格区间"));
+        setText(0,"0");
+        setText(1,"90");
+        while(!click("完成"));
+        toast('处理完成  开始扫货');
+        sleep("1500");
 
     // click("最新上架");
     // click(948,240,1080,361);
