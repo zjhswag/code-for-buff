@@ -683,7 +683,7 @@ start2();
             }
             breakbuy();
             } }
-            else if(textContains("梅红时刻").exists()||textContains("型 | 水灵").exists()||textContains("0 | 卡特尔").exists()||textContains("0 | 次时代").exists()||textContains("星 | 古董枪").exists()||textContains("守护者").exists()||textContains("） | 幻影破坏").exists()||textContains("0 | 死亡轮回").exists()||textContains("4 | 龙王").exists()||textContains("） | 龙王").exists())//zhi mai dao 001
+            else if(textContains("梅红时刻").exists()||textContains("型 | 水灵").exists()||textContains("0 | 卡特尔").exists()||textContains("0 | 次时代").exists()||textContains("星 | 古董枪").exists()||textContains("守护者").exists()||textContains("） | 幻影破坏").exists()||textContains("0 | 死亡轮回").exists()||textContains("4 | 龙王").exists()||textContains("） | 龙王").exists()||textContains("鹰 | 阴谋者").exists())//zhi mai dao 001
             {
                 //只买到001
                 toast("00-01");
@@ -753,7 +753,7 @@ start2();
         breakbuy();
     }
     
-    else if(textContains("P250（StatTrak™） | 卡特尔").exists()||textContains("） | 古董枪").exists()||textContains("毒蛇袭击").exists()||textContains("甜甜的").exists()||textContains("） | 水灵").exists()||textContains("） | 死亡轮回").exists()||textContains("阴谋者").exists())
+    else if(textContains("P250（StatTrak™） | 卡特尔").exists()||textContains("） | 古董枪").exists()||textContains("毒蛇袭击").exists()||textContains("甜甜的").exists()||textContains("） | 水灵").exists()||textContains("） | 死亡轮回").exists()||textContains("） | 阴谋者").exists())
       {
        breakbuy();
        toast('00-02');  
@@ -948,13 +948,13 @@ else if(textContains("受限").exists())//915
 
     //  }// textContains("橙红安").exists()||textContains("红色 DD").exists()||||textContains("10 | 表面淬火").exists()SG 553（StatTrak™） | 电子脉冲
 
-    else if(textContains("诅咒").exists()||textContains("） | 古董枪").exists()||textContains("） | 翼蜥").exists()||textContains("铁血玫瑰").exists()||textContains("牛 | 古董枪").exists()||textContains("） | 杀意大名").exists()||textContains("7 | 轨道").exists()||textContains("冥界之").exists()||textContains("林间").exists()||textContains("P | 火卫一").exists()||textContains("盲点").exists()||textContains("0 | 死亡之握").exists()||textContains("） | 蓝色层压板").exists()||textContains("） | 极地孤狼").exists()||textContains("星 | 惊惧骷髅").exists()||textContains("次时代").exists()||textContains("数字架构师").exists()||textContains("棱彩阶梯").exists()||textContains("型 | 核子花园").exists()||textContains("斯 | 电子脉冲").exists()||textContains("型（StatTrak™） | 城里的月光").exists()||textContains("4 | 特克卢").exists()||textContains("G | 极地孤狼").exists()||textContains("） | 帝国").exists()||textContains("7 | 蓝色层压板").exists()||textContains("P | 蠕虫之神").exists())//||textContains("4 | 西装革履").exists()||textContains("） | 西装革履").exists()
+    else if(textContains("诅咒").exists()||textContains("） | 古董枪").exists()||textContains("） | 翼蜥").exists()||textContains("铁血玫瑰").exists()||textContains("牛 | 古董枪").exists()||textContains("） | 杀意大名").exists()||textContains("7 | 轨道").exists()||textContains("冥界之").exists()||textContains("林间").exists()||textContains("P | 火卫一").exists()||textContains("盲点").exists()||textContains("0 | 死亡之握").exists()||textContains("） | 蓝色层压板").exists()||textContains("） | 极地孤狼").exists()||textContains("星 | 惊惧骷髅").exists()||textContains("次时代").exists()||textContains("数字架构师").exists()||textContains("棱彩阶梯").exists()||textContains("型 | 核子花园").exists()||textContains("斯 | 电子脉冲").exists()||textContains("型（StatTrak™） | 城里的月光").exists()||textContains("4 | 特克卢").exists()||textContains("G | 极地孤狼").exists()||textContains("） | 帝国").exists()||textContains("7 | 蓝色层压板").exists()||textContains("P | 蠕虫之神").exists()||textContains("） | 浮生如梦").exists())//||textContains("4 | 西装革履").exists()||textContains("） | 西装革履").exists()
     {
        buy001();  
        toast('00-01 啊');
        breakbuy();      
     }
-     else if(textContains("枪 | 模拟输入").exists()||textContains("型 | 崩络克").exists()||textContains("4 | 蚀刻领主").exists()||textContains("7 | 混合体").exists()||textContains("） | 隐伏帝王龙").exists()||textContains("血红蛋白").exists()||textContains("射线").exists()||textContains("金砖").exists()||textContains("幕后主谋").exists()||textContains("犯罪现场").exists()||textContains("4 | 狮鹫").exists()||textContains("花纹钢板").exists()||textContains("铜色星系").exists()||textContains("钛片").exists()||textContains("错觉").exists()||textContains("橙红安").exists()||textContains("） | 地狱门票").exists()||textContains("红色 DD").exists()||textContains("7 | 海之泡沫").exists()||textContains("） | 浮生如梦").exists()||textContains("） | 轻轨").exists()||textContains("鹰 | 轻轨").exists()||textContains("夜空沙暴").exists()||textContains("雅藤如嫣").exists()||textContains("） | 狮鹫").exists()||textContains("） | 火卫一").exists()||textContains("） | 钢铁禁锢").exists()||textContains("富兰克林").exists()||textContains("版 | 地狱门票").exists()||textContains("烧尽").exists()||textContains("4 | 杀意大名").exists()||textContains("遗产").exists()||textContains("） | 特克卢").exists()||textContains("0 | 翡翠色调").exists()||textContains("型 | 翼蜥").exists()||textContains("地狱看门犬").exists()||textContains("） | 蠕虫之神").exists()||textContains("太古传说").exists()||textContains("远古幻想").exists()||textContains("鬼脸天蛾").exists()||textContains("） | 祥和之翼").exists()||textContains("P | 猫猫狗狗").exists()||textContains("） | 夜无眠").exists()||textContains("型 | 夜无眠").exists())
+     else if(textContains("枪 | 模拟输入").exists()||textContains("型 | 崩络克").exists()||textContains("4 | 蚀刻领主").exists()||textContains("7 | 混合体").exists()||textContains("） | 隐伏帝王龙").exists()||textContains("血红蛋白").exists()||textContains("射线").exists()||textContains("金砖").exists()||textContains("幕后主谋").exists()||textContains("犯罪现场").exists()||textContains("4 | 狮鹫").exists()||textContains("花纹钢板").exists()||textContains("铜色星系").exists()||textContains("钛片").exists()||textContains("错觉").exists()||textContains("橙红安").exists()||textContains("） | 地狱门票").exists()||textContains("红色 DD").exists()||textContains("7 | 海之泡沫").exists()||textContains("） | 轻轨").exists()||textContains("鹰 | 轻轨").exists()||textContains("夜空沙暴").exists()||textContains("雅藤如嫣").exists()||textContains("） | 狮鹫").exists()||textContains("） | 火卫一").exists()||textContains("） | 钢铁禁锢").exists()||textContains("富兰克林").exists()||textContains("版 | 地狱门票").exists()||textContains("烧尽").exists()||textContains("4 | 杀意大名").exists()||textContains("遗产").exists()||textContains("） | 特克卢").exists()||textContains("0 | 翡翠色调").exists()||textContains("型 | 翼蜥").exists()||textContains("地狱看门犬").exists()||textContains("） | 蠕虫之神").exists()||textContains("太古传说").exists()||textContains("远古幻想").exists()||textContains("鬼脸天蛾").exists()||textContains("） | 祥和之翼").exists()||textContains("P | 猫猫狗狗").exists()||textContains("） | 夜无眠").exists()||textContains("型 | 夜无眠").exists())
      //||textContains("） | 夜无眠").exists()
      {
         toast(' only 00'); 
