@@ -677,8 +677,8 @@ var mainstrat=function(){
     }
 
 start2();
-  for(var i=0;i<20000;i++){
-    sleep(300);
+for(var i=0;i<20000;i++){
+    sleep(2000);
     gestures([350, [300, 400], [300, 1400]]);
     for(var j=0;j<2;j++)
     {
@@ -691,7 +691,7 @@ start2();
     textContains("磨损:").waitFor();
     price1();
     boolmosun = select();
-sleep(3000)
+// sleep(3000)
 
 
    if(boolmosun==1)       //略有磨损            
