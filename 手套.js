@@ -1,25 +1,28 @@
-
+// console.show()
 console.setPosition(device.width / 2, device.height / 1.5);
 var j=0;
 var price;
 var spr;
 var ss;
 var g;
+var boolmosun;
 var start2=function()
 {
     click("最新上架");
-    click(948,240,1080,361);
+    click(948,204,1080,325);
     while(!click("品质"));
-    while(!click("保密"));
-    while(!click("隐秘"));
+    // while(!click("隐秘"));
+    click(444,752,828,844);
+    // while(!click("非凡"));
     while(!click("类别"));
-    while(!click("普通"));
-    click(36,544,420,636);
+    click(444,508,828,600)
+    // click(36,544,420,636);
     while(!click("外观"));
+    while(!click("略有磨损"));
     while(!click("久经沙场"));
     while(!click("价格区间"));
-    setText(0,"10");
-    setText(1,"200");
+    setText(0,"500");
+    setText(1,"5000");
     while(!click("完成"));
     toast('处理完成  开始扫货');
     sleep("1000");   
@@ -145,13 +148,13 @@ function 关闭应用() {
 
 var price1=function()
 {
-//  console.show();
+// console.show();
 var t=textContains("|").findOne();
 var hh=textContains("¥").findOne();
  g=hh.text().substr(1);
 g=g*0.9;
 g=g.toFixed(2);
-//log(g+"steam");//steam上限价格
+// log(g+"steam");//steam上限价格
 var kind=t.text();//枪名
 var l=kind.length;
 var kind=kind.substr(l-5,4);//截取出酒精
@@ -163,16 +166,8 @@ var tprice=kind+"\n¥";//通过酒精¥获取价格
 var gun=textContains(tprice).findOne();
 var price=gun.text();
 var price=price.substr(6);//截取酒精下面价格，为整数
-if (price<210)//处理购买的底价
-{
-    var ss=1.1-price/21*0.01;
-    spr=price*(1.10-price/21*0.01);
-}
-else
-{
-    var ss=1.1-price/30*0.01;
-    spr=price*(1.10-price/30*0.01);
-}
+spr = parseInt(price, 10) + 50;
+// log("max"+spr)
 //log(price+" "+ss.toFixed(2)+" "+spr.toFixed(2));
 }
 var breakbuy=function()
@@ -192,15 +187,16 @@ var breakbuy=function()
 
 var ifbuy=function()
 { 
+
 //  console.show();
    var bp=textContains("¥").findOne();
     var bp=bp.text().substr(2);
-//    log("购买价格:"+bp);
-//     log("最大价格:"+spr);
-//     log("steam"+g);
+   log("购买价格:"+bp);
+    log("最大价格:"+spr);
+    log("steam"+g);
     if(bp<=spr&&bp<=g)
     {     
-    click("确认付款");
+    // click("确认付款");
      textContains("创建报价").findOne(10000);
      click("创建报价");
      textContains("关闭").findOne(13000);
@@ -211,6 +207,7 @@ var ifbuy=function()
     id("close").findOne().click();
      toast("no");
     }
+
  }
 var ifbuy1=function()//yhk
 { 
@@ -224,13 +221,106 @@ var ifbuy1=function()//yhk
      textContains("关闭").findOne(13000);
      click("关闭");
  }
+ var buy007=function()
+ {
+     if(textContains("磨损: 0.07").exists())
+     {
+        notebuy();
+         var buybutton=textContains("磨损: 0.07").findOne();
+         press(buybutton.bounds().centerX()+700,buybutton.bounds().centerY()-150,1);
+     if(textContains("确认付款").findOne(3000))
+         {
+             ifbuy();
+             toast('buy 0.07');
+         }
+    
+     else
+         {
+             swipe(900,1900,900,1200,1000);
+             var buybutton=textContains("磨损: 0.07").findOne();
+             press(buybutton.bounds().centerX()+700,buybutton.bounds().centerY()-150,1);
+             if(textContains("确认付款").findOne(3000)){
+             ifbuy();
+         }
+         }
+     }
+ }
+ var buy008 =function()
+ {
+     if(textContains("磨损: 0.08").exists())
+     {
+        notebuy();
+         var buybutton=textContains("磨损: 0.08").findOne();
+         press(buybutton.bounds().centerX()+700,buybutton.bounds().centerY()-150,1);
+    if(textContains("确认付款").findOne(3000))
+         {
+         ifbuy();
+         toast('buy 0.08');
+         }
+     else
+         {
+             swipe(900,1900,900,1200,1000);
+             var buybutton=textContains("磨损: 0.08").findOne();
+             press(buybutton.bounds().centerX()+700,buybutton.bounds().centerY()-150,1);
+             if(textContains("确认付款").findOne(3000)){
+             ifbuy();
+         }
+         }
+     }
+ }
+ var buy009 =function()
+ {
 
-
+      if(textContains("磨损: 0.09").exists())
+ {
+    notebuy();
+     var buybutton=textContains("磨损: 0.09").findOne();
+     press(buybutton.bounds().centerX()+700,buybutton.bounds().centerY()-150,1);
+  if(textContains("确认付款").findOne(3000))
+     {
+         ifbuy();
+         toast('buy 0.09');
+     }
+     else
+     {
+         swipe(900,1900,900,1200,1000);
+         var buybutton=textContains("磨损: 0.09").findOne();
+         press(buybutton.bounds().centerX()+700,buybutton.bounds().centerY()-150,1);
+         if(textContains("确认付款").findOne(3000)){
+         ifbuy();
+     }
+     }
+ }
+ }
+ var buy010=function()
+ {
+     if(textContains("磨损: 0.10").exists())
+     {
+        notebuy();
+         var buybutton=textContains("磨损: 0.10").findOne();
+         press(buybutton.bounds().centerX()+700,buybutton.bounds().centerY()-150,1);
+   if(textContains("确认付款").findOne(3000))
+         {
+             ifbuy();
+             toast('buy 0.10');
+         }
+ else
+         {
+             swipe(900,1900,900,1200,1000);
+             var buybutton=textContains("磨损: 0.10").findOne();
+             press(buybutton.bounds().centerX()+700,buybutton.bounds().centerY()-150,1);
+             if(textContains("确认付款").findOne(3000)){
+             ifbuy();
+         }    
+         }
+     }
+ }
 
 var buy020=function()
 {
     if(textContains("磨损: 0.20").exists())
     {
+        notebuy();
         var buybutton=textContains("磨损: 0.20").findOne();
         press(buybutton.bounds().centerX()+700,buybutton.bounds().centerY()-150,1);
     if(textContains("确认付款").findOne(3000))
@@ -253,6 +343,7 @@ var buy020=function()
 
 var buy019=function()
 {
+    notebuy();
     if(textContains("磨损: 0.19").exists())
     {
         var buybutton=textContains("磨损: 0.19").findOne();
@@ -279,6 +370,7 @@ var buy018=function()
 {
     if(textContains("磨损: 0.18").exists())
     {
+        notebuy();
         var buybutton=textContains("磨损: 0.18").findOne();
         press(buybutton.bounds().centerX()+700,buybutton.bounds().centerY()-150,1);
     if(textContains("确认付款").findOne(3000))
@@ -302,6 +394,7 @@ var buy021=function()
 {
     if(textContains("磨损: 0.21").exists())
     {
+        notebuy();
         var buybutton=textContains("磨损: 0.21").findOne();
         press(buybutton.bounds().centerX()+700,buybutton.bounds().centerY()-150,1);
     if(textContains("确认付款").findOne(3000))
@@ -325,6 +418,7 @@ var buy022=function()
 {
     if(textContains("磨损: 0.22").exists())
     {
+        notebuy();
         var buybutton=textContains("磨损: 0.22").findOne();
         press(buybutton.bounds().centerX()+700,buybutton.bounds().centerY()-150,1);
     if(textContains("确认付款").findOne(3000))
@@ -348,6 +442,7 @@ var buy023=function()
 {
     if(textContains("磨损: 0.23").exists())
     {
+        notebuy();
         var buybutton=textContains("磨损: 0.23").findOne();
         press(buybutton.bounds().centerX()+700,buybutton.bounds().centerY()-150,1);
     if(textContains("确认付款").findOne(3000))
@@ -371,6 +466,7 @@ var buy024=function()
 {
     if(textContains("磨损: 0.24").exists())
     {
+        notebuy();
         var buybutton=textContains("磨损: 0.24").findOne();
         press(buybutton.bounds().centerX()+700,buybutton.bounds().centerY()-150,1);
     if(textContains("确认付款").findOne(3000))
@@ -394,6 +490,7 @@ var buy025=function()
 {
     if(textContains("磨损: 0.25").exists())
     {
+        notebuy();
         var buybutton=textContains("磨损: 0.25").findOne();
         press(buybutton.bounds().centerX()+700,buybutton.bounds().centerY()-150,1);
     if(textContains("确认付款").findOne(3000))
@@ -417,6 +514,7 @@ var buy026=function()
 {
     if(textContains("磨损: 0.26").exists())
     {
+        notebuy();
         var buybutton=textContains("磨损: 0.26").findOne();
         press(buybutton.bounds().centerX()+700,buybutton.bounds().centerY()-150,1);
     if(textContains("确认付款").findOne(3000))
@@ -429,6 +527,30 @@ var buy026=function()
         {
             swipe(900,1900,900,1200,1000);
             var buybutton=textContains("磨损: 0.26").findOne();
+            press(buybutton.bounds().centerX()+700,buybutton.bounds().centerY()-150,1);
+            if(textContains("确认付款").findOne(3000)){
+            ifbuy();
+        }
+        }
+    }
+}
+var buy031=function()
+{
+    if(textContains("磨损: 0.3").exists())
+    {
+        notebuy();
+        var buybutton=textContains("磨损: 0.3").findOne();
+        press(buybutton.bounds().centerX()+700,buybutton.bounds().centerY()-150,1);
+    if(textContains("确认付款").findOne(3000))
+        {
+            ifbuy();
+            toast('buy 0.33');
+        }
+ 
+    else
+        {
+            swipe(900,1900,900,1200,1000);
+            var buybutton=textContains("磨损: 0.3").findOne();
             press(buybutton.bounds().centerX()+700,buybutton.bounds().centerY()-150,1);
             if(textContains("确认付款").findOne(3000)){
             ifbuy();
@@ -464,6 +586,48 @@ function Observer() {
     }
     return true
 }
+var select = function(){
+    var flag;
+    var t=textContains("|").findOne();
+    var kindgun=t.text();//枪名
+    var len=kindgun.length;
+    var kind=kindgun.substr(len-5,4);
+    if(kind=='略有磨损')
+    {
+        flag = 1;
+        // log(kind)
+    }
+    else{
+        flag = 2;
+        // log(kind)
+    }
+    return flag
+    }
+var notebuy = function(){
+    var t=textContains("|").findOne();
+    var kindgun=t.text();//枪名
+    var text = "floatnum\tbuy_price\tkindgun";
+        files.append("/storage/emulated/0/Pictures/BUFFbuy.xlsx", text);
+        var text=textContains("磨损:").findOne();
+        var price=textContains("¥").findOne();
+        var m=text.text();
+        var p=price.text();
+    var mo=m.substr(4,17);
+    var pr=p.substr(2)
+        // log(mo);
+        // log(pr);
+        var n="\n";
+        var t="\t";
+        files.append("/storage/emulated/0/Pictures/BUFFbuy.xlsx", n);
+        files.append("/storage/emulated/0/Pictures/BUFFbuy.xlsx", mo);
+        files.append("/storage/emulated/0/Pictures/BUFFbuy.xlsx", t);
+        files.append("/storage/emulated/0/Pictures/BUFFbuy.xlsx", pr);
+        files.append("/storage/emulated/0/Pictures/BUFFbuy.xlsx", t);
+        files.append("/storage/emulated/0/Pictures/BUFFbuy.xlsx",kindgun);
+    // log("!写入完成!");
+    }   
+
+
 
 var mainstrat=function(){
 
@@ -513,22 +677,8 @@ var mainstrat=function(){
     }
 
 start2();
-
-// for(var i=0;i<10000;i++){
-//     sleep(300);
-// gestures([300, [300, 400], [300, 1400]]);
-// for(var j=0;j<2;j++)
-// {
-//     sleep(100);
-//     if(j==0){press(100,700,1);}
-//     else if(j==1)   {
-//         sleep(200); 
-//         click(608,445,851,734);
-// } mobile
-//     click("最新上架");
-//     // sleep("1000"); 
   for(var i=0;i<20000;i++){
-        sleep(300);
+    sleep(300);
     gestures([350, [300, 400], [300, 1400]]);
     for(var j=0;j<2;j++)
     {
@@ -538,48 +688,58 @@ start2();
                 sleep(200); 
                 click(608,445,851,734);
         }
-    //  for(var j=0;j<2;j++)
-    // {
-    //     if(j==0){press(100,700,1);}
-    //         else if(j==1)   {
-    //             sleep(300); 
-    //             click(906,726,1050,779);
-    //     }
     textContains("磨损:").waitFor();
     price1();
+    boolmosun = select();
+sleep(3000)
 
 
-
-// else if(textContains("受限").exists())//915
-// {
-
-//     }
-
-   if(textContains("保密").exists())                   
+   if(boolmosun==1)       //略有磨损            
     {     
-        if(textContains("黑莲花").exists()||textContains("） | 奥林匹斯").exists()||textContains("鹰 | 机械工业").exists()||textContains("0 | 血s腥").exists()||textContains("） | 至尊威龙").exists()||textContains("鹰（StatTrak™） | 机械工业").exists()||textContains("D | 磷光体").exists()||textContains("死神").exists()||textContains("水灵").exists()||textContains("富兰克林").exists()||textContains("龙王").exists()||textContains("渐变琥珀").exists()||textContains("破碎铅秋").exists()||textContains("遥控").exists()||textContains("法玛斯（StatTrak™） | 机械工业").exists()||textContains("斯 | 机械工业").exists()||textContains("速度激情").exists()||textContains("7 | 卡特尔").exists()||textContains("0 | 卡特尔").exists()||textContains("宁静").exists()||textContains("珊瑚树").exists()||textContains("死亡轮回").exists()||textContains("阴谋").exists()||textContains("型 | 水灵").exists()||textContains("幻影破坏者").exists()||textContains("250（StatTrak™） | 卡特尔").exists()||textContains("三角").exists()||textContains("古董枪").exists()||textContains("混沌点阵").exists()||textContains("梅红时刻").exists()||textContains("残影").exists()||textContains("曼海蒂").exists()||textContains("守护者").exists()||textContains("红色层压").exists()||textContains("电子蜂巢").exists()||textContains("45（StatTrak™） | 动量").exists()||textContains("5 | 动量").exists()||textContains("血清").exists()||textContains("暗潮").exists()||textContains("脑洞大开").exists()||textContains("孟加拉猛虎").exists()||textContains("复仇者").exists()||textContains("0 | 心脏打击").exists()||textContains("P | 红线").exists()||textContains("凯门鳄").exists()||textContains("控制台").exists()||textContains("相柳").exists()||textContains("浮生如梦").exists()||textContains("溅射果").exists()||textContains("0 | 往日行动").exists()||textContains("） | 狩猎利器").exists()||textContains("死寂").exists()||textContains("） | 血腥运动").exists()||textContains("零食派对").exists()||textContains("） | 卡特尔").exists()||textContains("） | 可燃冰").exists()||textContains("） | 大佬龙").exists()||textContains("G | 汪之").exists()||textContains("0 | 次时代").exists()||textContains("4 | 地狱烈焰").exists()||textContains("毒蛇袭击").exists()||textContains("型 | 毁灭者").exists())
-        
-        // ||textContains("原子合金").exists()||textContains("5 | 黄夹").exists()||textContains("3 | 次时代").exists()textContains("4 | 死寂").exists()||||textContains("G | 湖怪鸟").exists()||textContains("破颚者").exists()||textContains("5 | 动量").exists()||textContains("星 | 暴怒野兽").exists()||textContains("斯 | 熔化").exists()||textContains("0 | 凝视").exists()||textContains("） | 玩具盒子").exists()
 
+ if(textContains("磨损: 0.07").exists())//买0.15
+        {
+            notebuy();
+            var buybutton=textContains("磨损: 0.07").findOne();
+            press(buybutton.bounds().centerX()+700,buybutton.bounds().centerY()-150,1);
+        if(textContains("确认付款").findOne(3000))
+            {
+                ifbuy();
+                toast('buy 0.07');
+            }
+    
+            else
+            {
+                swipe(900,1900,900,1200,1000);
+                var buybutton=textContains("磨损: 0.07").findOne();
+                press(buybutton.bounds().centerX()+700,buybutton.bounds().centerY()-150,1);
+                if(textContains("确认付款").findOne(3000)){
+                ifbuy();
+
+            }
+            } 
+            breakbuy();
+        } 
+        else if(textContains("九头蛇手套（★） | 响尾蛇").exists()||textContains("九头蛇手套（★） | 红树林").exists()||textContains("裹手（★） | 蟒蛇").exists()||textContains("九头蛇手套（★） | 表面淬火").exists())
         {
         toast("no")
         breakbuy(); 
         }
-
-   else if(textContains("磨损: 0.15").exists())//买0.15
+        else if(textContains("磨损: 0.08").exists())//买0.15
         {
-            var buybutton=textContains("磨损: 0.15").findOne();
+            notebuy();
+            var buybutton=textContains("磨损: 0.08").findOne();
             press(buybutton.bounds().centerX()+700,buybutton.bounds().centerY()-150,1);
         if(textContains("确认付款").findOne(3000))
             {
                 ifbuy();
-                toast('buy 0.15');
+                toast('buy 0.08');
             }
     
             else
             {
                 swipe(900,1900,900,1200,1000);
-                var buybutton=textContains("磨损: 0.15").findOne();
+                var buybutton=textContains("磨损: 0.08").findOne();
                 press(buybutton.bounds().centerX()+700,buybutton.bounds().centerY()-150,1);
                 if(textContains("确认付款").findOne(3000)){
                 ifbuy();
@@ -587,86 +747,20 @@ start2();
             } 
             breakbuy();
         } 
-
-   else if(textContains("磨损: 0.16").exists())//买0.000
+        else if(textContains("专业手套（★） | 元勋").exists()||textContains("摩托手套（★） | 清凉薄荷").exists()||textContains("驾驶手套（★） | 深红织物").exists()||textContains("运动手套（★） | 夜行衣").exists()||textContains("摩托手套（★） | 嘭！").exists()||textContains("运动手套（★） | 猩红头巾").exists()||textContains("裹手（★） | 屠夫").exists()||textContains("摩托手套（★） | 血压").exists()||textContains("摩托手套（★） | 小心烟雾弹").exists()||textContains("驾驶手套（★） | 月色织物").exists()||textContains("摩托手套（★） | *嘣！*").exists()||textContains("裹手（★） | 皮革").exists()||textContains("摩托手套（★） | 日蚀").exists()||textContains("摩托手套（★） | 终点线").exists()||textContains("驾驶手套（★） | 超越").exists()||textContains("裹手（★） | 云杉 DDPAT").exists()||textContains("血猎手套（★） | 蛇咬").exists()||textContains("驾驶手套（★） | 美洲豹女王").exists()||textContains("裹手（★） | 长颈鹿").exists()||textContains("摩托手套（★） | 交运").exists()||textContains("狂牙手套（★） | 黄色斑纹").exists()||textContains("裹手（★） | 森林色调").exists()||textContains("专业手套（★） | 狩鹿").exists()||textContains("血猎手套（★） | 游击队").exists()||textContains("裹手（★） | 防水布胶带").exists()||textContains("狂牙手套（★） | 针尖").exists()||textContains("驾驶手套（★） | 墨绿色调").exists())
         {
-            var buybutton=textContains("磨损: 0.16").findOne();
-            press(buybutton.bounds().centerX()+700,buybutton.bounds().centerY()-150,1);
-        if(textContains("确认付款").findOne(3000))
-            {
-                ifbuy();
-                toast('buy 0.16');
-            }
-    
-            else
-            {
-                swipe(900,1900,900,1200,1000);
-                var buybutton=textContains("磨损: 0.16").findOne();
-                press(buybutton.bounds().centerX()+700,buybutton.bounds().centerY()-150,1);
-                if(textContains("确认付款").findOne(3000)){
-                ifbuy();
-            }
-            } 
-            breakbuy();
-        } 
-
-  else if(textContains("磨损: 0.17").exists())//买0.000
-        {
-            var buybutton=textContains("磨损: 0.17").findOne();
-            press(buybutton.bounds().centerX()+700,buybutton.bounds().centerY()-150,1);
-        if(textContains("确认付款").findOne(3000))
-            {
-                ifbuy();
-                toast('buy 0.17');
-            }
-    
-            else
-            {
-                swipe(900,1900,900,1200,1000);
-                var buybutton=textContains("磨损: 0.17").findOne();
-                press(buybutton.bounds().centerX()+700,buybutton.bounds().centerY()-150,1);
-                if(textContains("确认付款").findOne(3000)){
-                ifbuy();
-            }
-            } 
-            breakbuy();
-        } 
-
-        else if(textContains("4 | 赛博").exists()||textContains("小绿怪").exists()||textContains("） | 精雕").exists()||textContains("4 | 焚烬之鳄").exists()||textContains("AUG | 动量").exists()||textContains("AUG（StatTrak™） | 动量").exists()||textContains("R | 经济").exists()||textContains("） | 经济").exists()||textContains("0 | 代").exists()||textContains("） | 樱花").exists()||textContains("0 | 渐变").exists()||textContains("意式拉力").exists()||textContains("） | 巨铁").exists()||textContains("8 | 巨铁").exists()||textContains("1 | 弗卢").exists()||textContains("3 | 四号栖息地").exists()||textContains("） | 荒野公主").exists()||textContains("） | 浅坟").exists()||textContains("） | 气密").exists()||textContains("7 | 红线").exists()||textContains("） | 正义").exists()||textContains("斯 | 雅典娜").exists()||textContains("枪 | 吞噬").exists()||textContains("枪 | 么么").exists()||textContains("0 | 迷人幻象").exists()||textContains("） | 么么").exists()||textContains("） | 迷人幻象").exists()||textContains("银装素裹").exists()||textContains("） | 灯神").exists()||textContains("） | 雅典娜").exists()||textContains("） | 吞噬").exists()||textContains("） | 埋葬之").exists()||textContains("） | 齿仙").exists()||textContains("） | 摩登时代").exists()||textContains("P | 金粉").exists())//||textContains("） | 美洲驼炮").exists()||textContains("） | 往日行动").exists()||textContains("） | 九头蛇").exists()||textContains("） | 席德.米德").exists()||textContains("渐变迪斯").exists()||textContains("） | 渐变迪斯").exists()||textContains("1 | 行刑者").exists()||textContains("） | 目皆转睛").exists()||textContains("） | 瓜瓜").exists()||textContains("） | 幽幻深渊").exists()||textContains("喋血战士").exists()
-        {
-         buy018();
-         buy019();
-         buy020();       
-         toast("special 18-20");
-         breakbuy();
+        buy009();
+        toast("no")
+        breakbuy(); 
         }
-        
-        else if(textContains("） | 赛博").exists()||textContains("） | 童话城堡").exists()||textContains("） | 小绿").exists()||textContains("7 | 童话城堡").exists()||textContains("） | 变态杀戮").exists()||textContains("） | 野孩子").exists()||textContains("） | 弗卢").exists()||textContains("） | 四号栖息地").exists()||textContains("） | 焚烬之鳄").exists()||textContains("） | 行刑者").exists()||textContains("0 | 变态杀戮").exists()||textContains("5 | 野孩子").exists()||textContains("7 | 正义").exists())//
+        else if(textContains("驾驶手套（★） | 蓝紫格子").exists()||textContains("专业手套（★） | 深红之网").exists()||textContains("专业手套（★） | 一线特工").exists()||textContains("驾驶手套（★） | 西装革履").exists()||textContains("专业手套（★） | 大腕").exists()||textContains("驾驶手套（★） | 菱背蛇纹").exists()||textContains("专业手套（★） | 森林 DDPAT").exists()||textContains("裹手（★） | 恶土").exists())
         {
-         buy018();
-         buy019();
-         buy020();
-         buy021();
-         buy022();
-         buy023();
-         toast("special 18-24");
-         breakbuy();
+        buy009();
+        buy010();
+        toast("no")
+        breakbuy(); 
         }
-        // else if()//
-        // {
-        //  buy018();
-        //  buy019();
-        //  buy020();
-        //  buy021();
-        //  buy022();
-        //  buy023();
-        //  buy024();
-        //  buy025();
-        //  toast("special 18-26");
-        //  breakbuy();
-        // }
-        //||textContains("keran").exists()
-
+ 
         else{
             sleep(100);
             if(id("drawer_icon").findOne(10000))
@@ -678,14 +772,14 @@ start2();
          
 
 else{   
-
-    if(textContains("血腥运动").exists()||textContains("霓虹革命").exists()||textContains("7 | 霓虹骑士").exists()||textContains("0 | 霓虹骑士").exists()||textContains("） | 霓虹骑士").exists()||textContains("变色龙").exists()||textContains("0 | 生化短").exists()||textContains("怒氓").exists()||textContains("战场之星").exists()||textContains("沙漠精英").exists()||textContains("荒野反叛").exists()||textContains("维多利亚").exists()||textContains("牛（StatTrak™） | 阿努比").exists()||textContains("牛 | 阿努比").exists()||textContains("7 | 阿努比").exists()||textContains("北海巨妖").exists()||textContains("渐变之色").exists()||textContains("火灵").exists()||textContains("射线").exists()||textContains("炎龙").exists()||textContains("弹雨").exists()||textContains("伽玛多普勒").exists()||textContains("纪念").exists()||textContains("次时代").exists()||textContains("喵之").exists()||textContains("无畏").exists()||textContains("水中之血").exists()||textContains("版 | 黑色").exists()||textContains("P | 黑色").exists()||textContains("USP 消音版（StatTrak™） | 黑色魅影").exists()||textContains("型（StatTrak™） | 黑色魅影").exists()||textContains("AWP（StatTrak™） | 黑色魅影").exists()||textContains("7 | 美洲").exists()||textContains("抽象派").exists()||textContains("防滚架").exists()||textContains("0 | 二西莫").exists()||textContains("P | 迷人眼").exists()||textContains("4 | 喧嚣杀").exists()||textContains("） | 皇家圣骑士").exists()||textContains("鹰 | 印花集").exists())//||textContains("4 | 黑色魅影").exists()||textContains("P90（StatTrak™） | 二西莫").exists()||textContains("7（StatTrak™） | 阿努比").exists()||textContains("7 | 暴怒野兽").exists()
+    if(textContains("狂牙手套（★） | 翡翠").exists()||textContains("九头蛇手套（★） | 表面淬火").exists()||textContains("驾驶手套（★） | 绯红列赞").exists()||textContains("裹手（★） | 长颈鹿").exists()||textContains("狂牙手套（★） | 黄色斑纹").exists()||textContains("裹手（★） | 森林色调").exists()||textContains("驾驶手套（★） | 美洲豹女王").exists()||textContains("专业手套（★） | 狩鹿").exists()||textContains("摩托手套（★） | 交运").exists()||textContains("狂牙手套（★） | 精神错乱").exists()||textContains("裹手（★） | 蟒蛇").exists()||textContains("摩托手套（★） | 第三特种兵连").exists()||textContains("血猎手套（★） | 游击队").exists()||textContains("血猎手套（★） | 染铜").exists()||textContains("裹手（★） | 防水布胶带").exists()||textContains("血猎手套（★） | 蛇咬").exists()||textContains("九头蛇手套（★） | 翡翠色调").exists()||textContains("狂牙手套（★） | 针尖").exists()||textContains("裹手（★） | 沙漠头巾").exists()||textContains("九头蛇手套（★） | 响尾蛇").exists()||textContains("九头蛇手套（★） | 红树林").exists()||textContains("驾驶手套（★） | 墨绿色调").exists())
         {
-         toast("no");
-          breakbuy();  
+        toast("no");
+        breakbuy();  
         }
         else if(textContains("磨损: 0.15").exists())//买0.15
         {
+            notebuy();
             var buybutton=textContains("磨损: 0.15").findOne();
             press(buybutton.bounds().centerX()+700,buybutton.bounds().centerY()-150,1);
         if(textContains("确认付款").findOne(3000))
@@ -708,6 +802,7 @@ else{
 
    else if(textContains("磨损: 0.16").exists())//买0.000
         {
+            notebuy();
             var buybutton=textContains("磨损: 0.16").findOne();
             press(buybutton.bounds().centerX()+700,buybutton.bounds().centerY()-150,1);
         if(textContains("确认付款").findOne(3000))
@@ -730,6 +825,7 @@ else{
 
   else if(textContains("磨损: 0.17").exists())//买0.000
         {
+            notebuy();
             var buybutton=textContains("磨损: 0.17").findOne();
             press(buybutton.bounds().centerX()+700,buybutton.bounds().centerY()-150,1);
         if(textContains("确认付款").findOne(3000))
@@ -749,15 +845,22 @@ else{
             } 
             breakbuy();
         } 
-        else if(textContains("P250（StatTrak™） | 二西莫").exists()||textContains("） | 潜行").exists()||textContains("合纵").exists()||textContains("二号玩家").exists()||textContains("） | 夜愿").exists()||textContains("皇帝").exists()||textContains("） | 星使").exists()||textContains("） | 倒吊").exists())//||textContains("迷人眼").exists()||textContains("女火神").exists()
+        else if(textContains('textContains("表面淬火").exists()'))
         {
-         buy018();
-         buy019();
-         buy020();
-         toast("special 18-20");
-         breakbuy();
+
+        breakbuy();
         }
-        else if(textContains("4 | 反冲精英").exists()||textContains("） | 反冲精英").exists())
+
+        else if(textContains("运动手套（★） | 双栖").exists()||textContains("驾驶手套（★） | 雪豹").exists()||textContains("裹手（★） | 钴蓝骷髅").exists()||textContains("专业手套（★） | 元勋").exists()||textContains("驾驶手套（★） | 蓝紫格子").exists()||textContains("运动手套（★） | 猩红头巾").exists()||textContains("专业手套（★） | 渐变大理石").exists()||textContains("驾驶手套（★） | 深红织物 (久经沙场)").exists()||textContains("专业手套（★） | 一线特工").exists()||textContains("专业手套（★） | 深红之网").exists()||textContains("驾驶手套（★） | 西装革履").exists()||textContains("专业手套（★） | 陆军少尉长官").exists()||textContains("摩托手套（★） | 血压").exists()||textContains("摩托手套（★） | *嘣！*").exists()||textContains("驾驶手套（★） | 月色织物").exists()||textContains("摩托手套（★） | 终点线").exists()||textContains("摩托手套（★） | 日蚀").exists()||textContains("摩托手套（★） | 清凉薄荷").exists()||textContains("摩托手套（★） | 玳瑁").exists()||textContains("摩托手套（★） | 小心烟雾弹").exists())
+        {
+        buy018();
+        buy019();
+        buy020();
+        toast("special 18-21");
+        breakbuy();
+        }
+
+        else if(textContains("运动手套（★） | 欧米伽").exists()||textContains("专业手套（★） | 老虎精英").exists()||textContains("专业手套（★） | 渐变之色").exists()||textContains("驾驶手套（★） | 王蛇").exists()||textContains("摩托手套（★） | 嘭！").exists()||textContains("运动手套（★） | 干旱").exists())
         {
         buy018();
         buy019();
@@ -765,8 +868,23 @@ else{
         buy021();
         buy022();
         buy023();
-        toast("special 18-24");
         breakbuy();
+        }
+
+        // text = 运动手套（★） | 弹弓 (久经沙场)
+        else if(textContains("迈阿密风云").exists()||textContains("专业手套（★） | 翠绿之网").exists()||textContains("运动手套（★） | 弹弓").exists())
+        {
+            buy018();
+            buy019();
+            buy020();
+            buy021();
+            buy022();
+            buy023();
+            buy024();
+            buy025();
+            buy026();
+            toast('24-27')
+            breakbuy();
         }
         else{
             sleep(100);
