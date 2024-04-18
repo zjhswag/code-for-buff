@@ -52,14 +52,41 @@
 // }
 // var boolmosun =  select();
 // log(boolmosun)
-var spr
-console.show();
+// var spr
+// console.show();
+// var t=textContains("|").findOne();
+// var hh=textContains("¥").findOne();
+//  g=hh.text().substr(1);
+// g=g*0.9;
+// g=g.toFixed(2);
+// log(g+"steam");//steam上限价格
+// var kind=t.text();//枪名
+// var l=kind.length;
+// var kind=kind.substr(l-5,4);//截取出酒精
+// var tprice=kind+"\n¥";//通过酒精¥获取价格
+// // if(textContains(tprice).exists())
+// // {
+// //     var gun=textContains(tprice).findOne();
+// // }
+// var gun=textContains(tprice).findOne();
+// var price=gun.text();
+// var price=price.substr(6);//截取酒精下面价格，为整数
+// spr = parseInt(price, 10) + 50;
+// var ss1= 1
+// ss1 +=50
+// if(price==2615){
+//   toast("no");
+// }
+// else{
+//   toast("yes");
+// }
+// log(price,ss1)
+// log("max"+spr)
+
+
+
+console.show()
 var t=textContains("|").findOne();
-var hh=textContains("¥").findOne();
- g=hh.text().substr(1);
-g=g*0.9;
-g=g.toFixed(2);
-log(g+"steam");//steam上限价格
 var kind=t.text();//枪名
 var l=kind.length;
 var kind=kind.substr(l-5,4);//截取出酒精
@@ -71,14 +98,9 @@ var tprice=kind+"\n¥";//通过酒精¥获取价格
 var gun=textContains(tprice).findOne();
 var price=gun.text();
 var price=price.substr(6);//截取酒精下面价格，为整数
-spr = parseInt(price, 10) + 50;
-var ss1= 1
-ss1 +=50
-if(price==2615){
-  toast("no");
-}
-else{
-  toast("yes");
-}
-log(price,ss1)
-log("max"+spr)
+price = parseInt(price, 10);
+// log("max"+spr)
+//log(price+" "+ss.toFixed(2)+" "+spr.toFixed(2));
+var p=price;
+// var pr=p.substr(2)
+log(p)
