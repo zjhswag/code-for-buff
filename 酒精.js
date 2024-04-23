@@ -632,7 +632,7 @@ start2();
             breakbuy();
         } 
 
-        else if(textContains("4 | 赛博").exists()||textContains("小绿怪").exists()||textContains("） | 精雕").exists()||textContains("4 | 焚烬之鳄").exists()||textContains("AUG | 动量").exists()||textContains("AUG（StatTrak™） | 动量").exists()||textContains("R | 经济").exists()||textContains("） | 经济").exists()||textContains("0 | 代").exists()||textContains("） | 樱花").exists()||textContains("0 | 渐变").exists()||textContains("意式拉力").exists()||textContains("） | 巨铁").exists()||textContains("8 | 巨铁").exists()||textContains("1 | 弗卢").exists()||textContains("3 | 四号栖息地").exists()||textContains("） | 荒野公主").exists()||textContains("） | 浅坟").exists()||textContains("） | 气密").exists()||textContains("7 | 红线").exists()||textContains("） | 正义").exists()||textContains("斯 | 雅典娜").exists()||textContains("枪 | 吞噬").exists()||textContains("枪 | 么么").exists()||textContains("0 | 迷人幻象").exists()||textContains("） | 么么").exists()||textContains("） | 迷人幻象").exists()||textContains("银装素裹").exists()||textContains("） | 灯神").exists()||textContains("） | 雅典娜").exists()||textContains("） | 吞噬").exists()||textContains("） | 埋葬之").exists()||textContains("） | 齿仙").exists()||textContains("） | 摩登时代").exists()||textContains("7 | 正义").exists()||textContains("目皆转睛").exists()||textContains("） | 金粉").exists()||textContains("要抱抱").exists())//||textContains("） | 美洲驼炮").exists()||textContains("） | 往日行动").exists()||textContains("） | 九头蛇").exists()||textContains("） | 席德.米德").exists()||textContains("渐变迪斯").exists()||textContains("） | 渐变迪斯").exists()||textContains("1 | 行刑者").exists()||textContains("） | 瓜瓜").exists()||textContains("） | 幽幻深渊").exists()||textContains("喋血战士").exists()
+        else if(textContains("4 | 赛博").exists()||textContains("小绿怪").exists()||textContains("） | 精雕").exists()||textContains("4 | 焚烬之鳄").exists()||textContains("AUG | 动量").exists()||textContains("AUG（StatTrak™） | 动量").exists()||textContains("R | 经济").exists()||textContains("） | 经济").exists()||textContains("0 | 代").exists()||textContains("） | 樱花").exists()||textContains("0 | 渐变").exists()||textContains("意式拉力").exists()||textContains("） | 巨铁").exists()||textContains("8 | 巨铁").exists()||textContains("1 | 弗卢").exists()||textContains("） | 荒野公主").exists()||textContains("） | 浅坟").exists()||textContains("） | 气密").exists()||textContains("7 | 红线").exists()||textContains("） | 正义").exists()||textContains("斯 | 雅典娜").exists()||textContains("枪 | 吞噬").exists()||textContains("枪 | 么么").exists()||textContains("0 | 迷人幻象").exists()||textContains("） | 么么").exists()||textContains("） | 迷人幻象").exists()||textContains("银装素裹").exists()||textContains("） | 灯神").exists()||textContains("） | 雅典娜").exists()||textContains("） | 吞噬").exists()||textContains("） | 埋葬之").exists()||textContains("） | 齿仙").exists()||textContains("） | 摩登时代").exists()||textContains("7 | 正义").exists()||textContains("目皆转睛").exists()||textContains("） | 金粉").exists()||textContains("要抱抱").exists()||textContains("喋血战士").exists()||textContains("） | 屠杀").exists())//||textContains("） | 美洲驼炮").exists()||textContains("） | 往日行动").exists()||textContains("） | 九头蛇").exists()||textContains("） | 席德.米德").exists()||textContains("渐变迪斯").exists()||textContains("） | 渐变迪斯").exists()||textContains("1 | 行刑者").exists()||textContains("） | 瓜瓜").exists()||textContains("） | 幽幻深渊").exists()
         {
          buy018();
          buy019();
@@ -641,7 +641,7 @@ start2();
          breakbuy();
         }
         
-        else if(textContains("） | 赛博").exists()||textContains("） | 童话城堡").exists()||textContains("） | 小绿").exists()||textContains("7 | 童话城堡").exists()||textContains("） | 变态杀戮").exists()||textContains("） | 野孩子").exists()||textContains("） | 弗卢").exists()||textContains("） | 四号栖息地").exists()||textContains("） | 焚烬之鳄").exists()||textContains("） | 行刑者").exists()||textContains("0 | 变态杀戮").exists()||textContains("5 | 野孩子").exists()||textContains("P | 金粉").exists())//
+        else if(textContains("） | 赛博").exists()||textContains("） | 童话城堡").exists()||textContains("） | 小绿").exists()||textContains("7 | 童话城堡").exists()||textContains("） | 变态杀戮").exists()||textContains("） | 野孩子").exists()||textContains("） | 弗卢").exists()||textContains("） | 四号栖息地").exists()||textContains("3 | 四号栖息地").exists()||textContains("） | 焚烬之鳄").exists()||textContains("） | 行刑者").exists()||textContains("0 | 变态杀戮").exists()||textContains("5 | 野孩子").exists()||textContains("P | 金粉").exists())//
         {
          buy018();
          buy019();
@@ -679,7 +679,7 @@ start2();
 
 else{   
 
-    if(textContains("血腥运动").exists()||textContains("霓虹革命").exists()||textContains("7 | 霓虹骑士").exists()||textContains("0 | 霓虹骑士").exists()||textContains("） | 霓虹骑士").exists()||textContains("变色龙").exists()||textContains("0 | 生化短").exists()||textContains("怒氓").exists()||textContains("战场之星").exists()||textContains("沙漠精英").exists()||textContains("荒野反叛").exists()||textContains("维多利亚").exists()||textContains("牛（StatTrak™） | 阿努比").exists()||textContains("牛 | 阿努比").exists()||textContains("7 | 阿努比").exists()||textContains("北海巨妖").exists()||textContains("渐变之色").exists()||textContains("火灵").exists()||textContains("射线").exists()||textContains("炎龙").exists()||textContains("弹雨").exists()||textContains("伽玛多普勒").exists()||textContains("纪念").exists()||textContains("次时代").exists()||textContains("喵之").exists()||textContains("无畏").exists()||textContains("水中之血").exists()||textContains("版 | 黑色").exists()||textContains("P | 黑色").exists()||textContains("USP 消音版（StatTrak™） | 黑色魅影").exists()||textContains("型（StatTrak™） | 黑色魅影").exists()||textContains("AWP（StatTrak™） | 黑色魅影").exists()||textContains("7 | 美洲").exists()||textContains("抽象派").exists()||textContains("防滚架").exists()||textContains("1 | 二西莫").exists()||textContains("s | 迷人眼").exists()||textContains("4 | 喧嚣杀").exists()||textContains("） | 皇家圣骑士").exists()||textContains("鹰 | 印花集").exists()||textContains("7（StatTrak™） | 阿努比").exists())//||textContains("4 | 黑色魅影").exists()||textContains("P90（StatTrak™） | 二西莫").exists()||textContains("7（StatTrak™） | 阿努比").exists()||textContains("7 | 暴怒野兽").exists()
+    if(textContains("血腥运动").exists()||textContains("霓虹革命").exists()||textContains("7 | 霓虹骑士").exists()||textContains("0 | 霓虹骑士").exists()||textContains("） | 霓虹骑士").exists()||textContains("变色龙").exists()||textContains("0 | 生化短").exists()||textContains("怒氓").exists()||textContains("战场之星").exists()||textContains("沙漠精英").exists()||textContains("荒野反叛").exists()||textContains("维多利亚").exists()||textContains("牛（StatTrak™） | 阿努比").exists()||textContains("牛 | 阿努比").exists()||textContains("7 | 阿努比").exists()||textContains("北海巨妖").exists()||textContains("渐变之色").exists()||textContains("火灵").exists()||textContains("射线").exists()||textContains("炎龙").exists()||textContains("弹雨").exists()||textContains("伽玛多普勒").exists()||textContains("纪念").exists()||textContains("次时代").exists()||textContains("喵之").exists()||textContains("无畏").exists()||textContains("水中之血").exists()||textContains("版 | 黑色").exists()||textContains("P | 黑色").exists()||textContains("USP 消音版（StatTrak™） | 黑色魅影").exists()||textContains("型（StatTrak™） | 黑色魅影").exists()||textContains("AWP（StatTrak™） | 黑色魅影").exists()||textContains("7 | 美洲").exists()||textContains("抽象派").exists()||textContains("防滚架").exists()||textContains("1 | 二西莫").exists()||textContains("s | 迷人眼").exists()||textContains("喧嚣杀").exists()||textContains("） | 皇家圣骑士").exists()||textContains("鹰 | 印花集").exists()||textContains("7（StatTrak™） | 阿努比").exists())//||textContains("4 | 黑色魅影").exists()||textContains("P90（StatTrak™） | 二西莫").exists()||textContains("7（StatTrak™） | 阿努比").exists()||textContains("7 | 暴怒野兽").exists()
         {
          toast("no");
           breakbuy();  
@@ -749,7 +749,7 @@ else{
             } 
             breakbuy();
         } 
-        else if(textContains("P250（StatTrak™） | 二西莫").exists()||textContains("） | 潜行").exists()||textContains("合纵").exists()||textContains("二号玩家").exists()||textContains("夜愿").exists()||textContains("皇帝").exists()||textContains("） | 星使").exists()||textContains("） | 倒吊").exists()||textContains("7 | 一发入魂").exists()||textContains("女火神").exists())//||textContains("迷人眼").exists()
+        else if(textContains("4 | 反冲精英").exists()||textContains("P250（StatTrak™） | 二西莫").exists()||textContains("） | 潜行").exists()||textContains("合纵").exists()||textContains("二号玩家").exists()||textContains("夜愿").exists()||textContains("皇帝").exists()||textContains("） | 星使").exists()||textContains("） | 倒吊").exists()||textContains("7 | 一发入魂").exists())//||textContains("迷人眼").exists()||textContains("女火神").exists()
         {
          buy018();
          buy019();
@@ -757,7 +757,7 @@ else{
          toast("special 18-20");
          breakbuy();
         }
-        else if(textContains("4 | 反冲精英").exists()||textContains("） | 反冲精英").exists())
+        else if(textContains("） | 反冲精英").exists())
         {
         buy018();
         buy019();
