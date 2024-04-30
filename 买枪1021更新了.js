@@ -311,38 +311,38 @@ var mainstrat=function(){
         id("drawer_icon").findOne().click();
     }
     //模拟器
-//   click("最新上架");
-//   click(948,204,1080,325);
+  click("最新上架");
+  click(948,204,1080,325);
 
-//     while(!click("品质"));
-//     while(!click("军规"));
-//     while(!click("类别"));
-//     while(!click("普通"));
-//     click(36,508,420,600);
-//     while(!click("外观"));
-//     while(!click("崭新出厂"));
-//     while(!click("价格区间"));
-//     setText(0,"0");
-//     setText(1,"90");
-//     while(!click("完成"));
-//     toast('处理完成  开始扫货');
-//     sleep("1500");
+    while(!click("品质"));
+    while(!click("军规"));
+    while(!click("类别"));
+    while(!click("普通"));
+    click(36,508,420,600);
+    while(!click("外观"));
+    while(!click("崭新出厂"));
+    while(!click("价格区间"));
+    setText(0,"0");
+    setText(1,"90");
+    while(!click("完成"));
+    toast('处理完成  开始扫货');
+    sleep("1500");
 
-    click("最新上架");
-      click(948,216,1080,337);
-        while(!click("品质"));
-        while(!click("军规"));
-        while(!click("类别"));
-        while(!click("普通"));
-        click(36,520,420,612);
-        while(!click("外观"));
-        while(!click("崭新出厂"));
-        while(!click("价格区间"));
-        setText(0,"0");
-        setText(1,"90");
-        while(!click("完成"));
-        toast('处理完成  开始扫货');
-        sleep("1500");
+    // click("最新上架");
+    //   click(948,216,1080,337);
+    //     while(!click("品质"));
+    //     while(!click("军规"));
+    //     while(!click("类别"));
+    //     while(!click("普通"));
+    //     click(36,520,420,612);
+    //     while(!click("外观"));
+    //     while(!click("崭新出厂"));
+    //     while(!click("价格区间"));
+    //     setText(0,"0");
+    //     setText(1,"90");
+    //     while(!click("完成"));
+    //     toast('处理完成  开始扫货');
+    //     sleep("1500");
 
     // click("最新上架");
     // click(948,240,1080,361);
@@ -389,7 +389,7 @@ var mainstrat=function(){
                 if(textContains("确认付款").findOne(4000)){
                 ifbuy();
             }
-            }
+            }   
             breakbuy();
         } 
 //
@@ -419,7 +419,7 @@ var mainstrat=function(){
             breakbuy();
         } 
     
-        else  if(textContains("核子反应").exists()||textContains("困兽之斗").exists()||textContains("凤凰徽记").exists()||textContains("午夜凶匪").exists()||textContains("核子剧毒").exists()||textContains("碾骨机").exists()||textContains("雪茄盒").exists()||textContains("沙漠之花").exists()||textContains("八音盒").exists()||textContains("紫色 DDPAT").exists()||textContains("安全网").exists()||textContains("迂回路线").exists()||textContains("碧藤青翠").exists()||textContains("AR | 渐变琥珀").exists()||textContains("潜藏者").exists()||textContains("星 | 流沙").exists()||textContains("蔚蓝多").exists()||textContains("上古图腾").exists()||textContains("G | 渐变琥珀").exists()||textContains("7 | 银白石英").exists()||textContains("斯 | 摧枯拉朽").exists()||textContains("尼罗河").exists()||textContains("9 | 落日").exists()||textContains("多变迷彩").exists()||textContains("钢铁三角").exists()||textContains("神袛").exists()||textContains("气泡流行").exists())//||textContains("全球攻势").exists()||textContains("冥界之河").exists()沙鹰
+        else  if(textContains("困兽之斗").exists()||textContains("凤凰徽记").exists()||textContains("午夜凶匪").exists()||textContains("核子剧毒").exists()||textContains("碾骨机").exists()||textContains("雪茄盒").exists()||textContains("沙漠之花").exists()||textContains("八音盒").exists()||textContains("紫色 DDPAT").exists()||textContains("安全网").exists()||textContains("迂回路线").exists()||textContains("碧藤青翠").exists()||textContains("AR | 渐变琥珀").exists()||textContains("潜藏者").exists()||textContains("星 | 流沙").exists()||textContains("蔚蓝多").exists()||textContains("上古图腾").exists()||textContains("G | 渐变琥珀").exists()||textContains("7 | 银白石英").exists()||textContains("斯 | 摧枯拉朽").exists()||textContains("尼罗河").exists()||textContains("9 | 落日").exists()||textContains("多变迷彩").exists()||textContains("钢铁三角").exists()||textContains("神袛").exists()||textContains("气泡流行").exists())//||textContains("全球攻势").exists()||textContains("冥界之河").exists()沙鹰
         {
         toast("sp");
         buy001();
