@@ -84,7 +84,7 @@ else
 }
 //log(price+" "+ss.toFixed(2)+" "+spr.toFixed(2));
 }
-var bf = 0.55
+var bf = 0.4
 var breakbuy=function()
 {
       if(textContains("改价").findOne(200))
