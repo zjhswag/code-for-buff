@@ -311,38 +311,38 @@ var mainstrat=function(){
         id("drawer_icon").findOne().click();
     }
     //模拟器
-  click("最新上架");
-  click(948,204,1080,325);
+//   click("最新上架");
+//   click(948,204,1080,325);
 
-    while(!click("品质"));
-    while(!click("军规"));
-    while(!click("类别"));
-    while(!click("普通"));
-    click(36,508,420,600);
-    while(!click("外观"));
-    while(!click("崭新出厂"));
-    while(!click("价格区间"));
-    setText(0,"0");
-    setText(1,"90");
-    while(!click("完成"));
-    toast('处理完成  开始扫货');
-    sleep("1500");
+//     while(!click("品质"));
+//     while(!click("军规"));
+//     while(!click("类别"));
+//     while(!click("普通"));
+//     click(36,508,420,600);
+//     while(!click("外观"));
+//     while(!click("崭新出厂"));
+//     while(!click("价格区间"));
+//     setText(0,"0");
+//     setText(1,"90");
+//     while(!click("完成"));
+//     toast('处理完成  开始扫货');
+//     sleep("1500");
 
-    // click("最新上架");
-    //   click(948,216,1080,337);
-    //     while(!click("品质"));
-    //     while(!click("军规"));
-    //     while(!click("类别"));
-    //     while(!click("普通"));
-    //     click(36,520,420,612);
-    //     while(!click("外观"));
-    //     while(!click("崭新出厂"));
-    //     while(!click("价格区间"));
-    //     setText(0,"0");
-    //     setText(1,"90");
-    //     while(!click("完成"));
-    //     toast('处理完成  开始扫货');
-    //     sleep("1500");
+    click("最新上架");
+      click(948,216,1080,337);
+        while(!click("品质"));
+        while(!click("军规"));
+        while(!click("类别"));
+        while(!click("普通"));
+        click(36,520,420,612);
+        while(!click("外观"));
+        while(!click("崭新出厂"));
+        while(!click("价格区间"));
+        setText(0,"0");
+        setText(1,"90");
+        while(!click("完成"));
+        toast('处理完成  开始扫货');
+        sleep("1500");
 
     // click("最新上架");
     // click(948,240,1080,361);
@@ -393,7 +393,7 @@ var mainstrat=function(){
             breakbuy();
         } 
 //
-    else  if(textContains("） | 渣渣").exists()||textContains("） | 灾难").exists()||textContains("） | 灯箱").exists()||textContains("0 | 灯箱").exists()||textContains("撕起来").exists()||textContains("元素轮廓").exists()||textContains("） | 斯康里").exists()||textContains("型 | 本生灯").exists()||textContains("） | 贾姆比").exists()||textContains("0 | 阿罗哈").exists()||textContains("斯 | 死亡之舞").exists()||textContains("星 | 风卷残云").exists()||textContains("透明弹").exists()||textContains("） | 小小噩梦").exists()||textContains("冬季").exists()||textContains("喵喵").exists()||textContains("骨化之色").exists()||textContains("牛 | 收割机").exists()||textContains("电子脉冲").exists()||textContains("赛博").exists()||textContains("液化").exists()||textContains("世仇").exists()||textContains("零点行动").exists()||textContains("枪 | 废物").exists()||textContains("） | 破坏者").exists()||textContains("加利尔 AR（StatTrak™） | 黑砂").exists()||textContains("星 | 游侠").exists()||textContains("碎蛋白石").exists()||textContains("星 | 幽灵迷").exists()||textContains("捕猎者").exists()||textContains("7 | 逮捕者").exists()||textContains("R | 黑砂").exists()||textContains("神秘碑文").exists()||textContains("型 | 幻影冥魂").exists()||textContains("交换机").exists()||textContains("银质").exists()||textContains("蓝巢").exists()||textContains("） | 涂鸦").exists()||textContains("坐牢").exists()||textContains("草皮").exists()||textContains("7 | 涂鸦潦草").exists()||textContains("艾萨克").exists()||textContains("手刹").exists()||textContains("无尽深海").exists()||textContains("翡翠色调").exists()||textContains("精英之作").exists()||textContains("渐变之色").exists()||textContains("外表生锈").exists()||textContains("G | 鹰翼").exists()||textContains("5 | 暴乱").exists()||textContains("捕猎者").exists()||textContains("） | 碎片").exists()||textContains("枪 | 夜百合").exists()||textContains("） | 幻影冥魂").exists()||textContains("R | 破坏者").exists()||textContains("一目了然").exists()||textContains("牵引力").exists()||textContains("） | 岩浆").exists()||textContains("蛇-9").exists()||textContains("钢铁禁锢").exists()||textContains("剪纸").exists()||textContains("卡特尔").exists()||textContains("龙之双子").exists()||textContains("三角战术").exists()||textContains("战鹰").exists()||textContains("弹跳线条").exists()||textContains("退役").exists()||textContains("冷血无情").exists()||textContains("铁之作").exists()||textContains("主机").exists()||textContains("乳白象牙").exists()||textContains("格洛克 18 型（StatTrak™） | 锈蚀烈焰").exists()||textContains("型 | 锈蚀烈焰").exists()||textContains("蓝色层压板").exists()||textContains("毒镖").exists()||textContains("报应").exists()||textContains("烈焰天使").exists()||textContains("通灵者").exists()||textContains("迷踪秘境").exists()||textContains("透光区").exists()||textContains("左右开花").exists()||textContains("刹车灯").exists()||textContains("蓝钛").exists()||textContains("塔 | 深蓝电镀处理").exists()||textContains("0 | 深蓝组").exists()||textContains("渐变强酸").exists()||textContains("铅管").exists()||textContains("异星世界").exists()||textContains("致命毒药").exists()||textContains("5 | 螺形").exists()||textContains("白鲑鱼").exists()||textContains("绿色陆战队").exists()||textContains("1 | 黑砂").exists()||textContains("D（StatTrak™） | 沙漠精英").exists()||textContains("） | 鼻青眼").exists()||textContains("4 | 变频器").exists()||textContains("5 | 短趾雕").exists()||textContains("黑莲花").exists())
+    else  if(textContains("） | 渣渣").exists()||textContains("） | 灾难").exists()||textContains("） | 灯箱").exists()||textContains("0 | 灯箱").exists()||textContains("撕起来").exists()||textContains("元素轮廓").exists()||textContains("） | 斯康里").exists()||textContains("型 | 本生灯").exists()||textContains("） | 贾姆比").exists()||textContains("0 | 阿罗哈").exists()||textContains("斯 | 死亡之舞").exists()||textContains("星 | 风卷残云").exists()||textContains("透明弹").exists()||textContains("） | 小小噩梦").exists()||textContains("冬季").exists()||textContains("喵喵").exists()||textContains("骨化之色").exists()||textContains("牛 | 收割机").exists()||textContains("电子脉冲").exists()||textContains("赛博").exists()||textContains("液化").exists()||textContains("世仇").exists()||textContains("零点行动").exists()||textContains("枪 | 废物").exists()||textContains("） | 破坏者").exists()||textContains("加利尔 AR（StatTrak™） | 黑砂").exists()||textContains("星 | 游侠").exists()||textContains("碎蛋白石").exists()||textContains("星 | 幽灵迷").exists()||textContains("捕猎者").exists()||textContains("7 | 逮捕者").exists()||textContains("R | 黑砂").exists()||textContains("神秘碑文").exists()||textContains("型 | 幻影冥魂").exists()||textContains("交换机").exists()||textContains("银质").exists()||textContains("） | 涂鸦").exists()||textContains("坐牢").exists()||textContains("7 | 涂鸦潦草").exists()||textContains("艾萨克").exists()||textContains("手刹").exists()||textContains("无尽深海").exists()||textContains("翡翠色调").exists()||textContains("精英之作").exists()||textContains("渐变之色").exists()||textContains("外表生锈").exists()||textContains("G | 鹰翼").exists()||textContains("捕猎者").exists()||textContains("） | 碎片").exists()||textContains("） | 幻影冥魂").exists()||textContains("R | 破坏者").exists()||textContains("一目了然").exists()||textContains("牵引力").exists()||textContains("） | 岩浆").exists()||textContains("蛇-9").exists()||textContains("钢铁禁锢").exists()||textContains("剪纸").exists()||textContains("卡特尔").exists()||textContains("龙之双子").exists()||textContains("三角战术").exists()||textContains("战鹰").exists()||textContains("弹跳线条").exists()||textContains("退役").exists()||textContains("0 | 冷血无情").exists()||textContains("铁之作").exists()||textContains("8 | 主机").exists()||textContains("乳白象牙").exists()||textContains("格洛克 18 型（StatTrak™） | 锈蚀烈焰").exists()||textContains("型 | 锈蚀烈焰").exists()||textContains("蓝色层压板").exists()||textContains("毒镖").exists()||textContains("报应").exists()||textContains("烈焰天使").exists()||textContains("通灵者").exists()||textContains("迷踪秘境").exists()||textContains("透光区").exists()||textContains("左右开花").exists()||textContains("刹车灯").exists()||textContains("AR | 蓝钛").exists()||textContains("Tec-9（StatTrak™） | 蓝钛").exists()||textContains("加利尔 AR（StatTrak™） | 蓝钛").exists()||textContains("塔 | 深蓝电镀处理").exists()||textContains("0 | 深蓝组").exists()||textContains("渐变强酸").exists()||textContains("铅管").exists()||textContains("异星世界").exists()||textContains("致命毒药").exists()||textContains("5 | 螺形").exists()||textContains("0 | 白鲑鱼").exists()||textContains("1 | 黑砂").exists()||textContains("D（StatTrak™） | 沙漠精英").exists()||textContains("） | 鼻青眼").exists()||textContains("4 | 变频器").exists()||textContains("5 | 短趾雕").exists()||textContains("黑莲花").exists())
     //||textContains("星 | 黑暗").exists()||textContains("塔 | 藏身处").exists()
         {
             toast('no');
@@ -419,7 +419,7 @@ var mainstrat=function(){
             breakbuy();
         } 
     
-        else  if(textContains("困兽之斗").exists()||textContains("凤凰徽记").exists()||textContains("午夜凶匪").exists()||textContains("核子剧毒").exists()||textContains("碾骨机").exists()||textContains("雪茄盒").exists()||textContains("沙漠之花").exists()||textContains("八音盒").exists()||textContains("紫色 DDPAT").exists()||textContains("安全网").exists()||textContains("迂回路线").exists()||textContains("碧藤青翠").exists()||textContains("AR | 渐变琥珀").exists()||textContains("潜藏者").exists()||textContains("星 | 流沙").exists()||textContains("蔚蓝多").exists()||textContains("上古图腾").exists()||textContains("G | 渐变琥珀").exists()||textContains("7 | 银白石英").exists()||textContains("斯 | 摧枯拉朽").exists()||textContains("尼罗河").exists()||textContains("9 | 落日").exists()||textContains("多变迷彩").exists()||textContains("大马士革").exists()||textContains("钢铁三角").exists()||textContains("神袛").exists()||textContains("气泡流行").exists()||textContains("核子花园").exists())//||textContains("全球攻势").exists()||textContains("冥界之河").exists()沙鹰
+        else  if(textContains("困兽之斗").exists()||textContains("凤凰徽记").exists()||textContains("午夜凶匪").exists()||textContains("核子剧毒").exists()||textContains("碾骨机").exists()||textContains("雪茄盒").exists()||textContains("沙漠之花").exists()||textContains("八音盒").exists()||textContains("紫色 DDPAT").exists()||textContains("安全网").exists()||textContains("迂回路线").exists()||textContains("碧藤青翠").exists()||textContains("AR | 渐变琥珀").exists()||textContains("潜藏者").exists()||textContains("星 | 流沙").exists()||textContains("蔚蓝多").exists()||textContains("上古图腾").exists()||textContains("G | 渐变琥珀").exists()||textContains("7 | 银白石英").exists()||textContains("斯 | 摧枯拉朽").exists()||textContains("尼罗河").exists()||textContains("9 | 落日").exists()||textContains("多变迷彩").exists()||textContains("大马士革").exists()||textContains("钢铁三角").exists()||textContains("神袛").exists()||textContains("气泡流行").exists()||textContains("血虎").exists()||textContains("核子花园").exists())//||textContains("全球攻势").exists()||textContains("冥界之河").exists()沙鹰
         {
         toast("sp");
         buy001();
