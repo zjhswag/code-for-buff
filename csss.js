@@ -67,10 +67,108 @@ console.show()
 //     console.log("Function not executed.");
 // }
 console.show()
-price =163
-spr=price*(1.10-price/21*0.01);
-log(price,spr)
-price = 250
-var ss=1.1-price/30*0.01;
-spr=price*(1.10-price/30*0.01);
-log(price,spr)
+// price =163
+// spr=price*(1.10-price/21*0.01);
+// log(price,spr)
+// price = 250
+// var ss=1.1-price/30*0.01;
+// spr=price*(1.10-price/30*0.01);
+// log(price,spr)
+// if (textContains("） |").exists())
+// {
+//     toast("yes")
+// }
+var price1=function()
+{
+//  console.show();
+var t=textContains("|").findOne();
+var hh=textContains("¥").findOne();
+ g=hh.text().substr(1);
+g=g*0.92;
+g=g.toFixed(2);
+// g = parseFloat(g,10)
+// log(g+"steam");//steam上限价格
+var kind=t.text();//枪名
+var l=kind.length;
+var kind=kind.substr(l-5,4);//截取出崭新出厂或者略有磨损四个字
+var tprice=kind+"\n¥";//通过崭新出厂¥获取价格
+// if(textContains(tprice).exists())
+// {
+//     var gun=textContains(tprice).findOne();
+// }
+var gun=textContains(tprice).findOne();
+var price=gun.text();
+var price=price.substr(6);//截取崭新出厂下面价格，为整数
+price = parseFloat(price,10)
+if (price<=150)//处理购买的底价
+
+{
+    log('0')
+    // var ss=1.1-price/21*0.01;
+    spr=price*(1.10-price/21*0.01);
+}
+else
+{
+if(price>150&&price<260)
+{
+    log('1')
+    spr = price+5
+}
+else
+{
+    
+    spr = price+6
+    log(spr)
+}
+}
+// log("st购买价格:"+g);
+// log("最大价格:"+spr);
+// log(price+" "+" "+spr.toFixed(2)+" "+" "+g);
+}
+price1()
+var breakbuy=function()
+{
+      if(textContains("改价").findOne(200))
+        {
+            if(id("drawer_icon").findOne(10000))
+        {
+        id("drawer_icon").findOne().click();
+        }
+        }
+        if(id("drawer_icon").findOne(10000))
+        {
+        id("drawer_icon").findOne().click();
+        }
+}
+var ifbuy=function()
+{ 
+    log("1111")
+//  console.show();
+   var bp=textContains("¥").findOne();
+   toast('1')
+    var bp=bp.text().substr(2);
+   log("购买价格:"+bp);
+    log("最大价格:"+spr);
+    log("steam"+g);
+    if(bp<=spr&&bp<=g)
+    {   
+        log("yes")  
+    // click("确认付款");
+    //  textContains("创建报价").findOne(10000);
+    //  click("创建报价");
+    //  textContains("关闭").findOne(13000);
+    //  click("关闭");
+    //   toast("yes");
+    }
+    else{
+    id("close").findOne().click();
+     toast("no");
+    }
+ }
+ var buybutton=textContains("磨损: 0.130").findOne();
+ press(buybutton.bounds().centerX()+700,buybutton.bounds().centerY()-150,1);
+ if(textContains("确认付款").findOne(3000))
+ {
+ ifbuy();
+ toast('buy 0.08');
+ }
