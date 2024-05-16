@@ -264,38 +264,38 @@ var mainstrat=function(){
         id("drawer_icon").findOne().click();
     }
     //模拟器
-//   click("最新上架");
-//   click(948,204,1080,325);
+  click("最新上架");
+  click(948,204,1080,325);
 
-//     while(!click("品质"));
-//     while(!click("军规"));
-//     while(!click("类别"));
-//     while(!click("普通"));
-//     click(36,508,420,600);
-//     while(!click("外观"));
-//     while(!click("崭新出厂"));
-//     while(!click("价格区间"));
-//     setText(0,"0");
-//     setText(1,"90");
-//     while(!click("完成"));
-//     toast('处理完成  开始扫货');
-//     sleep("1500");
+    while(!click("品质"));
+    while(!click("军规"));
+    while(!click("类别"));
+    while(!click("普通"));
+    click(36,508,420,600);
+    while(!click("外观"));
+    while(!click("崭新出厂"));
+    while(!click("价格区间"));
+    setText(0,"0");
+    setText(1,"90");
+    while(!click("完成"));
+    toast('处理完成  开始扫货');
+    sleep("1500");
 
-    click("最新上架");
-      click(948,216,1080,337);
-        while(!click("品质"));
-        while(!click("军规"));
-        while(!click("类别"));
-        while(!click("普通"));
-        click(36,520,420,612);
-        while(!click("外观"));
-        while(!click("崭新出厂"));
-        while(!click("价格区间"));
-        setText(0,"0");
-        setText(1,"90");
-        while(!click("完成"));
-        toast('处理完成  开始扫货');
-        sleep("1500");
+    // click("最新上架");
+    //   click(948,216,1080,337);
+    //     while(!click("品质"));
+    //     while(!click("军规"));
+    //     while(!click("类别"));
+    //     while(!click("普通"));
+    //     click(36,520,420,612);
+    //     while(!click("外观"));
+    //     while(!click("崭新出厂"));
+    //     while(!click("价格区间"));
+    //     setText(0,"0");
+    //     setText(1,"90");
+    //     while(!click("完成"));
+    //     toast('处理完成  开始扫货');
+    //     sleep("1500");
 
     // click("最新上架");
     // click(948,240,1080,361);
@@ -384,7 +384,7 @@ var mainstrat=function(){
             buy003();
             breakbuy();
         }
-        else if(textContains("） | 小小噩梦").exists()||textContains("） | 盘根错").exists()||textContains("） | 中度威胁").exists()||textContains("） | 稳").exists()||textContains("） | 做旧手艺").exists()||textContains("MP9（StatTrak™） | 黑砂").exists()||textContains("） | 坐牢").exists()||textContains("） | 鱼长梦短").exists()||textContains("） | 猎人").exists()||textContains("） | 神秘碑文").exists()||textContains("） | 涂鸦潦草").exists()||textContains("） | 汤姆猫").exists()||textContains("） | 主机").exists()||textContains("） | 液化").exists()||textContains("） | 赛博之力").exists()||textContains("） | 羽量级").exists()||textContains("） | 至高皇帝").exists()||textContains("） | 板条箱").exists()||textContains("） | O.S").exists()||textContains("格洛克 18 型（StatTrak™） | 锈蚀烈焰").exists()||textContains("） | 青绿地形").exists()||textContains("） | 绿色陆战队").exists()||textContains("） | 动摇").exists()||textContains("） | 冬季战术").exists()||textContains("） | 重金属").exists()||textContains("） | 斯康里娅").exists()||textContains("） | 短趾雕").exists()||textContains("） | 透明弹").exists()||textContains("） | 冷血无情").exists()||textContains("） | 废物王").exists()||textContains("） | 碎蛋白石").exists()||textContains("） | 战吼斑纹").exists()||textContains("） | 铜绿").exists()||textContains("） | 异星世界").exists()||textContains("） | 印花板").exists()||textContains("） | 青金鳄").exists()||textContains("加利尔 AR（StatTrak™） | 黑砂").exists()||textContains("） | 三角战术").exists()||textContains("） | 退役").exists()||textContains("） | 灾难").exists()||textContains("） | 世仇").exists()||textContains("） | 元素轮廓").exists()||textContains("） | 保护色").exists()||textContains("） | 草皮").exists()||textContains("Tec-9（StatTrak™） | 蛇-9").exists()||textContains("） | 战鹰").exists()||textContains("） | 乳白象牙").exists()||textContains("） | 零点行动").exists()||textContains("） | 撕起来").exists()||textContains("） | 牵引力").exists()||textContains("） | 鼻青眼").exists()||textContains("） | 特训地图").exists()||textContains("） | 胶面花纹").exists()||textContains("） | 一目了然").exists()||textContains("） | 螺形").exists()||textContains("） | 幻影").exists()||textContains("R8 左轮手枪（StatTrak™） | 记忆碎片").exists()||textContains("） | 碧蓝斑纹").exists()||textContains("MAC-10（StatTrak™） | 阿罗哈").exists()||textContains("） | 本生灯").exists()||textContains("） | 卡特尔").exists()||textContains("） | 报应").exists()||textContains("） | 透光区").exists()||textContains("） | 钢铁禁锢").exists()||textContains("） | 死亡之舞").exists()||textContains("） | 龙之双子").exists()||textContains("） | 黑豹").exists()||textContains("） | 镁元素").exists()||textContains("） | 红巢").exists()||textContains("） | 蓝巢").exists()||textContains("） | 毁灭者").exists()||textContains("） | 碎片").exists()||textContains("） | 贾姆比").exists()||textContains("D（StatTrak™） | 沙漠精英").exists()||textContains("） | 刺青").exists()||textContains("） | 机动化").exists()||textContains("） | 重构").exists()||textContains("） | 藏身处").exists()||textContains("） | 科林斯遗产").exists())
+        else if(textContains("） | 小小噩梦").exists()||textContains("） | 盘根错").exists()||textContains("） | 中度威胁").exists()||textContains("） | 稳").exists()||textContains("） | 做旧手艺").exists()||textContains("MP9（StatTrak™） | 黑砂").exists()||textContains("） | 坐牢").exists()||textContains("） | 鱼长梦短").exists()||textContains("） | 猎人").exists()||textContains("） | 神秘碑文").exists()||textContains("） | 涂鸦潦草").exists()||textContains("） | 汤姆猫").exists()||textContains("） | 主机").exists()||textContains("） | 液化").exists()||textContains("） | 赛博之力").exists()||textContains("） | 羽量级").exists()||textContains("） | 至高皇帝").exists()||textContains("） | 板条箱").exists()||textContains("） | O.S").exists()||textContains("格洛克 18 型（StatTrak™） | 锈蚀烈焰").exists()||textContains("） | 青绿地形").exists()||textContains("） | 绿色陆战队").exists()||textContains("） | 动摇").exists()||textContains("） | 冬季战术").exists()||textContains("） | 重金属").exists()||textContains("） | 斯康里娅").exists()||textContains("） | 短趾雕").exists()||textContains("） | 透明弹").exists()||textContains("） | 冷血无情").exists()||textContains("） | 废物王").exists()||textContains("） | 碎蛋白石").exists()||textContains("） | 战吼斑纹").exists()||textContains("） | 铜绿").exists()||textContains("） | 异星世界").exists()||textContains("） | 印花板").exists()||textContains("） | 青金鳄").exists()||textContains("加利尔 AR（StatTrak™） | 黑砂").exists()||textContains("） | 三角战术").exists()||textContains("） | 退役").exists()||textContains("） | 灾难").exists()||textContains("） | 世仇").exists()||textContains("） | 元素轮廓").exists()||textContains("） | 保护色").exists()||textContains("） | 草皮").exists()||textContains("Tec-9（StatTrak™） | 蛇-9").exists()||textContains("） | 战鹰").exists()||textContains("） | 乳白象牙").exists()||textContains("） | 零点行动").exists()||textContains("） | 撕起来").exists()||textContains("） | 牵引力").exists()||textContains("） | 鼻青眼").exists()||textContains("） | 特训地图").exists()||textContains("） | 胶面花纹").exists()||textContains("） | 一目了然").exists()||textContains("） | 螺形").exists()||textContains("） | 幻影").exists()||textContains("R8 左轮手枪（StatTrak™） | 记忆碎片").exists()||textContains("） | 碧蓝斑纹").exists()||textContains("MAC-10（StatTrak™） | 阿罗哈").exists()||textContains("） | 本生灯").exists()||textContains("） | 卡特尔").exists()||textContains("） | 报应").exists()||textContains("） | 透光区").exists()||textContains("） | 钢铁禁锢").exists()||textContains("） | 死亡之舞").exists()||textContains("） | 龙之双子").exists()||textContains("） | 黑豹").exists()||textContains("） | 镁元素").exists()||textContains("） | 红巢").exists()||textContains("） | 蓝巢").exists()||textContains("） | 毁灭者").exists()||textContains("） | 碎片").exists()||textContains("） | 贾姆比").exists()||textContains("D（StatTrak™） | 沙漠精英").exists()||textContains("） | 刺青").exists()||textContains("） | 机动化").exists()||textContains("） | 重构").exists()||textContains("） | 藏身处").exists()||textContains("） | 丢把枪").exists()||textContains("） | 科林斯遗产").exists())
         {
             toast('NOT BUY 0.01');
             breakbuy();
@@ -425,9 +425,9 @@ observer_thread = threads.start(function () {
                 console.setPosition(device.width / 2, device.height / 1.5);
                 console.show();
             console.warn("脚本在3秒后重启！");
-            console.warn(15-j+"次后大重启");
+            console.warn(8-j+"次后大重启");
                 j++;
-                if(j>=15)
+                if(j>=8)
                 {
                     关闭应用();
                 }

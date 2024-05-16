@@ -853,7 +853,7 @@ start2();
             toast('00-03,07-08');
             breakbuy();
           }
-  else if(textContains("法玛斯（StatTrak™） | 机械工业").exists()||textContains("沙漠之鹰（StatTrak™） | 机械工业").exists()||textContains("狩猎利器").exists()||textContains("8 | 速度激情").exists()||textContains("斯 | 机械工业").exists()||textContains("） | 死神").exists()||textContains("7 | 幻影破坏者").exists()||textContains("） | 浮生如梦").exists()||textContains("P | 浮生如梦").exists()||textContains("7 | 复仇者").exists())//text = 法玛斯（StatTrak™） | 机械工业 (略有磨损)||textContains("） | 席德.米德").exists()||
+  else if(textContains("法玛斯（StatTrak™） | 机械工业").exists()||textContains("沙漠之鹰（StatTrak™） | 机械工业").exists()||textContains("狩猎利器").exists()||textContains("斯 | 机械工业").exists()||textContains("） | 死神").exists()||textContains("7 | 幻影破坏者").exists()||textContains("） | 浮生如梦").exists()||textContains("P | 浮生如梦").exists()||textContains("7 | 复仇者").exists())//text = 法玛斯（StatTrak™） | 机械工业 (略有磨损)||textContains("） | 席德.米德").exists()||
           {
             buy003();
             toast('00-03,07');
@@ -892,7 +892,7 @@ start2();
        toast('00- 03 07');
        breakbuy();
     }
-    else if(textContains("） | 曼海蒂").exists()||textContains("鹰 | 大佬龙").exists()||textContains("） | 迷人眼").exists()||textContains("） | 精英之作").exists()||textContains("） | 气密").exists()||textContains("R | 迷人眼").exists()||textContains("三角").exists())//||textContains("9 | 气密").exists()
+    else if(textContains("） | 曼海蒂").exists()||textContains("鹰 | 大佬龙").exists()||textContains("） | 迷人眼").exists()||textContains("） | 精英之作").exists()||textContains("） | 气密").exists()||textContains("R | 迷人眼").exists()||textContains("三角").exists()||textContains("8 | 速度激情").exists())//||textContains("9 | 气密").exists()
     {
         buy008();
         toast('00-02,07-08');
@@ -1343,9 +1343,9 @@ observer_thread = threads.start(function () {
                 console.setPosition(device.width / 2, device.height / 1.5);
                 console.show();
             console.warn("脚本在3秒后重启！");
-            console.warn(15-j+"次后大重启");
+            console.warn(8-j+"次后大重启");
                 j++;
-                if(j>=15)
+                if(j>=8)
                 {
                     关闭应用();
                 }
