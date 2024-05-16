@@ -503,7 +503,7 @@ function Observer() {
 
 var mainstrat=function(){
 
-//  setScreenMetrics(1080,2110);
+ setScreenMetrics(1080,2110);
     launchApp("网易BUFF");
     click("关闭");
     click("创建报价");
@@ -540,7 +540,7 @@ var mainstrat=function(){
         id("drawer_icon").findOne().click();
     }
 
-start60();
+start2();
 
 // for(var i=0;i<10000;i++){
 //     sleep(300);
@@ -1328,7 +1328,7 @@ else{
     
 //检测脚本是否卡在某一页面
 work_thread = threads.start(function () {
-//    setScreenMetrics(1080,2110);
+   setScreenMetrics(1080,2110);
     toast('aaaaa');
   mainstrat();
 });

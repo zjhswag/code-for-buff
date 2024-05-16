@@ -60,6 +60,7 @@ var hh=textContains("¥").findOne();
  g=hh.text().substr(1);
 g=g*0.88;
 g=g.toFixed(2);
+g = parseFloat(g,10);
 //log(g+"steam");//steam上限价格
 var kind=t.text();//枪名
 var l=kind.length;
@@ -84,7 +85,7 @@ else
 }
 //log(price+" "+ss.toFixed(2)+" "+spr.toFixed(2));
 }
-var bf = 0.4
+var bf = 0.2
 var breakbuy=function()
 {
       if(textContains("改价").findOne(200))
@@ -98,18 +99,20 @@ var breakbuy=function()
         {
         id("drawer_icon").findOne().click();
         }
-        toast('文豪小小的也很可爱');
 }
 
+var bp
 var ifbuy=function()
-{ 
-//  console.show();
-   var bp=textContains("¥").findOne();
-    var bp=bp.text().substr(2);
+{    
+
+    var elements = findElementsWithText("¥");
+    if (elements.length > 0) {
+        var lastElement = elements[elements.length - 1]; 
+        var priceText = lastElement.text(); 
+        bp = priceText.substr(2,6); 
+    }
     var buy1 = Math.random()
-//    log("购买价格:"+bp);
-//     log("最大价格:"+spr);
-//     log("steam"+g);
+    bp = parseFloat(bp,10)
     if(bp<=spr&&bp<=g&&buy1<bf)
     {     
     click("确认付款");
