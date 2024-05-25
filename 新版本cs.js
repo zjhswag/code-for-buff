@@ -669,14 +669,14 @@ start2();
                 // toast('00-01 07');
                  breakbuy();
             }
-            else if(textContains("版 | 破颚者").exists()||textContains("凯门鳄").exists()||textContains("型 | 零食派对").exists()||textContains("） | 九头蛇").exists()||textContains("） | 金粉").exists()||textContains("屠杀者").exists()||textContains("） | 渐变迪斯科").exists())//
+            else if(textContains("版 | 破颚者").exists()||textContains("凯门鳄").exists()||textContains("型 | 零食派对").exists()||textContains("） | 九头蛇").exists()||textContains("） | 金粉").exists()||textContains("屠杀者").exists()||textContains("） | 渐变迪斯科").exists()||textContains("0 | 渐变迪斯科").exists())//
             {
                 buy007();
                 buy008();
                 // toast("00-01 07-08");                                                                                  
                 breakbuy();
             }
-    else if(textContains("） | 玩具盒子").exists()||textContains("0 | 渐变迪斯科").exists())//
+    else if(textContains("） | 玩具盒子").exists())//
     {
         buy007();
         buy008();
@@ -809,14 +809,14 @@ start2();
             toast('00-03,07-09');
             breakbuy();
           }
-   else if(textContains("） | 爆裂食物").exists()||textContains("） | 摩登时代").exists()||textContains("星 | 樱花").exists()||textContains("） | 相柳").exists()||textContains("） | 大佬龙").exists()||textContains("5 | 动量").exists()||textContains("D | 磷光体").exists()||textContains("鹰 | 机械工业").exists()||textContains("） | 买定离手").exists()||textContains("） | 美洲驼炮").exists()||textContains("） | 往日行动").exists()||textContains("） | 磷光体").exists()||textContains("UMP-45（StatTrak™） | 动量").exists()||textContains("9 | 爆裂食物").exists())//席德
+   else if(textContains("） | 爆裂食物").exists()||textContains("） | 摩登时代").exists()||textContains("星 | 樱花").exists()||textContains("） | 相柳").exists()||textContains("） | 大佬龙").exists()||textContains("5 | 动量").exists()||textContains("D | 磷光体").exists()||textContains("） | 买定离手").exists()||textContains("） | 美洲驼炮").exists()||textContains("） | 往日行动").exists()||textContains("） | 磷光体").exists()||textContains("UMP-45（StatTrak™） | 动量").exists()||textContains("9 | 爆裂食物").exists())//席德
           {
             buy003(); 
             buy008();
             toast('00-03,07-08');
             breakbuy();
           }
-  else if(textContains("法玛斯（StatTrak™） | 机械工业").exists()||textContains("沙漠之鹰（StatTrak™） | 机械工业").exists()||textContains("狩猎利器").exists()||textContains("斯 | 机械工业").exists()||textContains("） | 死神").exists()||textContains("7 | 幻影破坏者").exists()||textContains("） | 浮生如梦").exists()||textContains("P | 浮生如梦").exists()||textContains("7 | 复仇者").exists())//text = 法玛斯（StatTrak™） | 机械工业 (略有磨损)||textContains("） | 席德.米德").exists()||
+  else if(textContains("法玛斯（StatTrak™） | 机械工业").exists()||textContains("沙漠之鹰（StatTrak™） | 机械工业").exists()||textContains("狩猎利器").exists()||textContains("斯 | 机械工业").exists()||textContains("） | 死神").exists()||textContains("7 | 幻影破坏者").exists()||textContains("鹰 | 机械工业").exists()||textContains("） | 浮生如梦").exists()||textContains("P | 浮生如梦").exists()||textContains("7 | 复仇者").exists())//text = 法玛斯（StatTrak™） | 机械工业 (略有磨损)||textContains("） | 席德.米德").exists()||
           {
             buy003();
             toast('00-03,07');
