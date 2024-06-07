@@ -101,10 +101,8 @@ function mainstrat() {
         }
         textContains("完成").waitFor();
         click('完成');
-        // launchApp("网易BUFF");
         textContains("订单详情").waitFor();
-        // log('yse');
-        sleep(2000);
+        textContains("发起报价").findOne(10000);
         click('发起报价');
         click('创建报价');
         sleep(2000);

@@ -7,55 +7,70 @@ var price;
 var spr;
 var ss;
 function 关闭应用() {
+    j=0;
     toast("即将关闭应用");
     let packageName = currentPackage();
-    app.openAppSetting(packageName);
+    log(app.getAppName(packageName)+"将被关闭,进入重启");
+    recents();
     sleep(2000);
-    if(textContains("强行停止").exists())
-    { 
-   textContains("强行停止").findOne().click();
+    
+// 只针对模拟器
+if(id("dismiss_task").className("android.widget.ImageView").desc("移除网易BUFF。").findOne(2000))
+{
+    id("dismiss_task").className("android.widget.ImageView").desc("移除网易BUFF。").findOne().click()
+}
+else{
+    click(480,2100,600,2220);
+}
    console.show();
-   log(app.getAppName(packageName)+"被关闭,进入重启");
-   sleep(1000);
-   textContains("确定").findOne().click();
    sleep(1000);
    for(var i=0;i<4;i++)
    {
-   console.warn(4-i +"后重启脚本");
+   log(4-i +"后重启脚本");
    sleep(1000);
    }
    console.hide();
-    }
-    else 
-    {
-     console.log("应用未正常关闭");
-    }
 }
 var price1=function()
 {
- //console.show();
+//  console.show();
 var t=textContains("|").findOne();
 var hh=textContains("¥").findOne();
  g=hh.text().substr(1);
-g=g*0.95;
+g=g*0.92;
 g=g.toFixed(2);
-g = parseFloat(g,10);
-//log(g);
-var kind=t.text();
+g = parseFloat(g,10)
+//log(g+"steam");//steam上限价格
+var kind=t.text();//枪名
 var l=kind.length;
 var kind=kind.substr(l-5,4);//截取出崭新出厂或者略有磨损四个字
-var tprice=kind+"\n¥";
-if(textContains(tprice).exists())
-{
-    var gun=textContains(tprice).findOne();
-}
+var tprice=kind+"\n¥";//通过崭新出厂¥获取价格
+// if(textContains(tprice).exists())
+// {
+//     var gun=textContains(tprice).findOne();
+// }
+var gun=textContains(tprice).findOne();
 var price=gun.text();
-var price=price.substr(6);
-var ss=1.1-price/22*0.01;
-spr=price*(1.10-price/20*0.01);
- //log(price+" "+ss.toFixed(2)+" "+spr.toFixed(2));
+var price=price.substr(6);//截取崭新出厂下面价格，为整数
+price = parseFloat(price,10)
+if (price<=150)//处理购买的底价
+{
+    // var ss=1.1-price/21*0.01;
+    spr=price*(1.10-price/21*0.01);
 }
-var bf = 0.2
+else
+{
+if(price>150&&price<260)
+{
+    spr = price+5
+}
+else
+{
+    spr = price+6
+}
+}
+// log(price+" "+" "+spr.toFixed(2)+" "+" "+g);
+}
 var breakbuy=function()
 {
       if(textContains("改价").findOne(200))
@@ -70,34 +85,47 @@ var breakbuy=function()
         id("drawer_icon").findOne().click();
         }
 }
-
-
+function findElementsWithText(text) {
+    return textContains(text).find();
+}
 var bp
+var bf = 0.52
 var ifbuy=function()
 {    
-
+    // console.show()
     var elements = findElementsWithText("¥");
-    if (elements.length > 0) {
+    if(elements.length > 0) 
+    {
         var lastElement = elements[elements.length - 1]; 
-        var priceText = lastElement.text(); 
+        var priceText = lastElement.text(); // 获取控件的文本
         bp = priceText.substr(2,6); 
     }
-    var buy1 = Math.random()
     bp = parseFloat(bp,10)
-    if(bp<=spr&&bp<=g&&buy1<bf)
+    var buy1 = Math.random()
+    var elements = findElementsWithText("支付");
+    var lastElement = elements[1].text();
+    if(lastElement=='微信支付'||lastElement=='支付宝支付')
+        {
+            id("close").findOne().click();
+            toast("傻逼支付宝不能买");
+    
+        }
+  else  if(bp<=spr&&bp<=g&&buy1<bf)
     {     
     click("确认付款");
-     textContains("创建报价").findOne(10000);
-     click("创建报价");
-     textContains("关闭").findOne(13000);
-     click("关闭");
-      toast("yes");
+    textContains("创建报价").findOne(10000);
+    click("创建报价");
+    textContains("关闭").findOne(13000);
+    click("关闭");
+    toast("yes");
     }
-    else{
+    
+    else
+    {
     id("close").findOne().click();
-     toast("no");
+        toast("no");
     }
- }
+}
 
 
 var ifbuy1=function()//yhk
@@ -329,27 +357,7 @@ var mainstrat=function(){
     }
         textContains("磨损:").waitFor();
          price1();
- if(textContains("磨损: 0.000").exists())//买0.000
-        {
-            var buybutton=textContains("磨损: 0.000").findOne();
-            press(buybutton.bounds().centerX()+700,buybutton.bounds().centerY()-150,1);
-        if(textContains("确认付款").findOne(4000))
-            {
-                ifbuy();
-            }
-            else
-            {
-                swipe(900,1900,900,1200,1000);
-                var buybutton=textContains("磨损: 0.000").findOne();
-                press(buybutton.bounds().centerX()+700,buybutton.bounds().centerY()-150,1);
-                if(textContains("确认付款").findOne(4000)){
-                ifbuy();
-            }
-            }   
-            breakbuy();
-        } 
-//
-    else  if(textContains("） | 渣渣").exists()||textContains("灾难").exists()||textContains("） | 灯箱").exists()||textContains("0 | 灯箱").exists()||textContains("撕起来").exists()||textContains("元素轮廓").exists()||textContains("） | 斯康里").exists()||textContains("型 | 本生灯").exists()||textContains("） | 贾姆比").exists()||textContains("0 | 阿罗哈").exists()||textContains("斯 | 死亡之舞").exists()||textContains("星 | 风卷残云").exists()||textContains("透明弹").exists()||textContains("） | 小小噩梦").exists()||textContains("冬季").exists()||textContains("喵喵").exists()||textContains("骨化之色").exists()||textContains("牛 | 收割机").exists()||textContains("电子脉冲").exists()||textContains("赛博").exists()||textContains("液化").exists()||textContains("世仇").exists()||textContains("零点行动").exists()||textContains("枪 | 废物").exists()||textContains("） | 破坏者").exists()||textContains("加利尔 AR（StatTrak™） | 黑砂").exists()||textContains("星 | 游侠").exists()||textContains("碎蛋白石").exists()||textContains("星 | 幽灵迷").exists()||textContains("捕猎者").exists()||textContains("7 | 逮捕者").exists()||textContains("R | 黑砂").exists()||textContains("神秘碑文").exists()||textContains("型 | 幻影冥魂").exists()||textContains("交换机").exists()||textContains("银质").exists()||textContains("蓝巢").exists()||textContains("） | 涂鸦").exists()||textContains("坐牢").exists()||textContains("7 | 涂鸦潦草").exists()||textContains("艾萨克").exists()||textContains("手刹").exists()||textContains("无尽深海").exists()||textContains("翡翠色调").exists()||textContains("精英之作").exists()||textContains("渐变之色").exists()||textContains("外表生锈").exists()||textContains("G | 鹰翼").exists()||textContains("捕猎者").exists()||textContains("） | 碎片").exists()||textContains("） | 幻影冥魂").exists()||textContains("R | 破坏者").exists()||textContains("一目了然").exists()||textContains("牵引力").exists()||textContains("） | 岩浆").exists()||textContains("蛇-9").exists()||textContains("钢铁禁锢").exists()||textContains("剪纸").exists()||textContains("卡特尔").exists()||textContains("龙之双子").exists()||textContains("三角战术").exists()||textContains("战鹰").exists()||textContains("弹跳线条").exists()||textContains("退役").exists()||textContains("0 | 冷血无情").exists()||textContains("铁之作").exists()||textContains("8 | 主机").exists()||textContains("乳白象牙").exists()||textContains("格洛克 18 型（StatTrak™） | 锈蚀烈焰").exists()||textContains("型 | 锈蚀烈焰").exists()||textContains("蓝色层压板").exists()||textContains("毒镖").exists()||textContains("报应").exists()||textContains("烈焰天使").exists()||textContains("通灵者").exists()||textContains("迷踪秘境").exists()||textContains("透光区").exists()||textContains("左右开花").exists()||textContains("刹车灯").exists()||textContains("蓝钛").exists()||textContains("塔 | 深蓝电镀处理").exists()||textContains("0 | 深蓝组").exists()||textContains("渐变强酸").exists()||textContains("铅管").exists()||textContains("异星世界").exists()||textContains("致命毒药").exists()||textContains("5 | 螺形").exists()||textContains("0 | 白鲑鱼").exists()||textContains("1 | 黑砂").exists()||textContains("D（StatTrak™） | 沙漠精英").exists()||textContains("） | 鼻青眼").exists()||textContains("4 | 变频器").exists()||textContains("5 | 短趾雕").exists()||textContains("黑莲花").exists())
+  if(textContains("） | 渣渣").exists()||textContains("） | 破坏者").exists()||textContains("灾难").exists()||textContains("） | 灯箱").exists()||textContains("0 | 灯箱").exists()||textContains("0 | 元素轮廓").exists()||textContains("型 | 本生灯").exists()||textContains("FN57（StatTrak™） | 斯康里娅").exists()||textContains("0 | 阿罗哈").exists()||textContains("星 | 风卷残云").exists()||textContains("透明弹").exists()||textContains("型 | 冬季").exists()||textContains("喵喵").exists()||textContains("牛 | 收割机").exists()||textContains("电子脉冲").exists()||textContains("赛博").exists()||textContains("液化").exists()||textContains("5 | 世仇").exists()||textContains("枪 | 废物").exists()||textContains("加利尔 AR（StatTrak™） | 黑砂").exists()||textContains("星 | 游侠").exists()||textContains("碎蛋白石").exists()||textContains("捕猎者").exists()||textContains("7 | 逮捕者").exists()||textContains("R | 黑砂").exists()||textContains("神秘碑文").exists()||textContains("交换机").exists()||textContains("银质").exists()||textContains("） | 涂鸦").exists()||textContains("坐牢").exists()||textContains("7 | 涂鸦潦草").exists()||textContains("艾萨克").exists()||textContains("手刹").exists()||textContains("无尽深海").exists()||textContains("翡翠色调").exists()||textContains("7 | 精英之作").exists()||textContains("） | 精英之作").exists()||textContains("渐变之色").exists()||textContains("外表生锈").exists()||textContains("G | 鹰翼").exists()||textContains("R | 破坏者").exists()||textContains("一目了然").exists()||textContains("蛇-9").exists()||textContains("剪纸").exists()||textContains("塔 | 卡特尔").exists()||textContains("塔 | 龙之双子").exists()||textContains("三角战术").exists()||textContains("战鹰").exists()||textContains("弹跳线条").exists()||textContains("退役").exists()||textContains("0 | 冷血无情").exists()||textContains("铁之作").exists()||textContains("8 | 主机").exists()||textContains("） | 主机").exists()||textContains("格洛克 18 型（StatTrak™） | 锈蚀烈焰").exists()||textContains("型 | 锈蚀烈焰").exists()||textContains("蓝色层压板").exists()||textContains("毒镖").exists()||textContains("塔 | 报应").exists()||textContains("烈焰天使").exists()||textContains("） | 通灵者").exists()||textContains("迷踪秘境").exists()||textContains("牛 | 透光区").exists()||textContains("左右开花").exists()||textContains("刹车灯").exists()||textContains("AR | 蓝钛").exists()||textContains("Tec-9（StatTrak™） | 蓝钛").exists()||textContains("加利尔 AR（StatTrak™） | 蓝钛").exists()||textContains("塔 | 深蓝电镀处理").exists()||textContains("0 | 深蓝组").exists()||textContains("渐变强酸").exists()||textContains("铅管").exists()||textContains("型 | 异星世界").exists()||textContains("0 | 异星世界").exists()||textContains("格洛克 18 型（StatTrak™） | 异星世界").exists()||textContains("致命毒药").exists()||textContains("5 | 螺形").exists()||textContains("0 | 白鲑鱼").exists()||textContains("1 | 黑砂").exists()||textContains("4 | 变频器").exists()||textContains("5 | 短趾雕").exists()||textContains("版 | 黑莲花").exists()||textContains("牵引力").exists()||textContains("9 | 骨化之").exists()||textContains("型 | 幻影冥魂").exists()||textContains("D | 鼻青眼").exists()||textContains("1 | 碧蓝斑纹").exists()||textContains("0 | 盘根错").exists()||textContains("枪 | 稳").exists()||textContains("） | 水纹之").exists()||textContains("5 | 做旧手艺").exists())
     //||textContains("星 | 黑暗").exists()||textContains("塔 | 藏身处").exists()
         {
             toast('no');
