@@ -608,6 +608,7 @@ start2();
         breakbuy(); 
         }
 
+        
    else if(textContains("磨损: 0.15").exists())//买0.15
         {
             var buybutton=textContains("磨损: 0.15").findOne();
