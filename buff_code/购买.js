@@ -61,63 +61,107 @@ function mainstrat() {
             click(884, 2140, 1080, 2280);
         }
     sleep(2000)
+    click(372,806,462,896)
     click('我的购买');
     click('创建报价');
     while(true)
     {
-    textContains("等待付款").waitFor();
-    if (textContains("等待付款").exists()) {
-        var buybutton = textContains("等待付款").findOne();
-        press(buybutton.bounds().centerX(), buybutton.bounds().centerY(), 1);
-        textContains("立即支付").waitFor();
-        click("立即支付");
-        sleep(1000);
-        textContains("确认付款").waitFor();
-        click("确认付款");
-        textContains("请输入支付密码").waitFor();
-        if (textContains("请输入支付密码").exists()) {
-            log('yse')
-            sleep(2000);
-            var password = "219316";
-            click('2')
-            sleep (1000)
-            click('1')
-            sleep(1000)
-            click('9')
-            sleep(1000)
-            click('3')
-            sleep(1000)
-            click('1')
-            sleep(1000)
-            click('6')
-        }
-        sleep(3000);
-        if (textContains("支付密码不正确").exists()) {
-            sleep(2000);      
-            for (var i = 0; i < password.length; i++) {
-                click(password[i]);
+        // console.show()
+        // console.log('WAIT')
+        click('我的购买');
+        sleep(1000)
+        performGesture()
+        sleep(1000)
+        if (textContains("等待你发").exists()||textContains("等待付款").exists()||textContains("一键发送").exists()) {
+            if (textContains("等待付款").exists()) {
+                toast('2')
+                var buybutton = textContains("等待付款").findOne();
+                press(buybutton.bounds().centerX(), buybutton.bounds().centerY(), 1);
+                textContains("立即支付").waitFor();
+                click("立即支付");
                 sleep(1000);
+                textContains("确认付款").waitFor();
+                click("确认付款");
+                textContains("请输入支付密码").waitFor();
+                if (textContains("请输入支付密码").exists()) {
+                    log('yse')
+                    sleep(2000);
+                    var password = "219316";
+                    click('2')
+                    sleep (1000)
+                    click('1')
+                    sleep(1000)
+                    click('9')
+                    sleep(1000)
+                    click('3')
+                    sleep(1000)
+                    click('1')
+                    sleep(1000)
+                    click('6')
+                }
+                sleep(3000);
+                if (textContains("支付密码不正确").exists()) {
+                    sleep(2000);      
+                    for (var i = 0; i < password.length; i++) {
+                        click(password[i]);
+                        sleep(1000);
+                    }
+                }
+                textContains("完成").waitFor();
+                click('完成');
+                textContains("订单详情").waitFor();
+                textContains("发起报价").findOne(10000);
+                click('发起报价');
+                click('创建报价');
+                sleep(2000);
+                click(12, 84, 132, 228);
+                sleep(10000);
+            }
+            else 
+            {
+                toast('1')
+                
+                sleep(5000);
+                if (textContains("一键发送").exists())
+                    {
+                        var buybutton=textContains("一键发送").findOne();
+                        press(buybutton.bounds().centerX(),buybutton.bounds().centerY(),1);
+                        toast('1')
+                    }
+                else if(textContains("发起报价").exists())
+                {
+                    var buybutton=textContains("发起报价").findOne();
+                    press(buybutton.bounds().centerX(),buybutton.bounds().centerY(),1);
+                }
+                else if(textContains("等待你").exists())
+
+                    {
+                        // toast('123')
+                        var buybutton=textContains("等待你发").findOne();
+                        press(buybutton.bounds().centerX(),buybutton.bounds().centerY(),1);
+                        // click(888,486,1044,590)
+                        textContains("发起报价").findOne(10000);
+                        click('发起报价')
+                    }
+                // if textContains("一键发送").waitFor();
+                if(id("drawer_icon").findOne(10000))
+                    {
+                    id("drawer_icon").findOne().click();
+                    }
+        
             }
         }
-        textContains("完成").waitFor();
-        click('完成');
-        textContains("订单详情").waitFor();
-        textContains("发起报价").findOne(10000);
-        click('发起报价');
-        click('创建报价');
-        sleep(2000);
-        click(12, 84, 132, 228);
-        sleep(10000);
-    }
+        toast('22')
+
 }
 }
 
 // 启动定时器线程
-var gestureThread = threads.start(function() {
-    setInterval(function() {
-            performGesture();
-        }, 30000);
-});
+// var gestureThread = threads.start(function() {
+//     setInterval(function() {
+//             performGesture();
+//         }, 30000);
+// });
 
 
 
