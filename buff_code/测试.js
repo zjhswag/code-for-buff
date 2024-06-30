@@ -1,11 +1,17 @@
-// if(textContains("等待卖家").exists())
-
-//     {
-//         toast('123')
-//         click("等待卖家")
-//         click(888,486,1044,590)
-//         textContains("发起报价").findOne(10000);
-//         click('发起报价')
-//     }
-var buybutton=textContains("等待你发").findOne();
-press(buybutton.bounds().centerX(),buybutton.bounds().centerY(),1);
+if (textContains("请输入支付密码").exists()) {
+    log('yse')
+    sleep(2000);
+    var password = "219316";
+    var buybutton=textContains("2").findOne();
+    press(buybutton.bounds().centerX(),buybutton.bounds().centerY(),1);
+    sleep (1000)
+    click('1')
+    sleep(1000)
+    click('9')
+    sleep(1000)
+    click('3')
+    sleep(1000)
+    click('1')
+    sleep(1000)
+    click('6')
+}

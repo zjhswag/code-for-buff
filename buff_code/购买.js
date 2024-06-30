@@ -66,6 +66,7 @@ function mainstrat() {
     click('创建报价');
     while(true)
     {
+        click('我知道了');
         // console.show()
         // console.log('WAIT')
         click('我的购买');
@@ -119,14 +120,12 @@ function mainstrat() {
             }
             else 
             {
-                toast('1')
-                
                 sleep(5000);
                 if (textContains("一键发送").exists())
                     {
                         var buybutton=textContains("一键发送").findOne();
                         press(buybutton.bounds().centerX(),buybutton.bounds().centerY(),1);
-                        toast('1')
+                        toast('111')
                     }
                 else if(textContains("发起报价").exists())
                 {
@@ -136,6 +135,12 @@ function mainstrat() {
                 else if(textContains("等待你").exists())
 
                     {
+                        if (textContains("一键发送").exists())
+                            {
+                                var buybutton=textContains("一键发送").findOne();
+                                press(buybutton.bounds().centerX(),buybutton.bounds().centerY(),1);
+                                toast('1')
+                            }
                         // toast('123')
                         var buybutton=textContains("等待你发").findOne();
                         press(buybutton.bounds().centerX(),buybutton.bounds().centerY(),1);
@@ -148,9 +153,21 @@ function mainstrat() {
                     {
                     id("drawer_icon").findOne().click();
                     }
+                    click('我知道了');
         
             }
         }
+        else if(textContains("订单详情").exists())
+            {
+                click('我知道了');
+                if(id("drawer_icon").findOne(10000))
+                    {
+                    id("drawer_icon").findOne().click();
+                    }
+                    
+
+            }
+        click('我知道了');
         toast('22')
 
 }
