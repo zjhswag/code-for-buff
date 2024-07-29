@@ -796,7 +796,7 @@ start60();
             toast('00-03,10');
               breakbuy();
          }
-          else if(textContains("枪 | 奥林匹斯").exists()||textContains("G | 动量").exists()||textContains("AUG（StatTrak™） | 动量").exists()||textContains("） | 吞噬").exists()||textContains("） | 雅典娜之眼").exists()||textContains("R | 经济").exists()||textContains("） | 汪之萌杀").exists()||textContains("） | 小绿怪").exists()||textContains("耍猴把戏").exists()||textContains("） | 荒野公主").exists()||textContains("0 | 浅坟").exists()||textContains("） | 迷人幻象").exists()||textContains("） | 么么").exists()||textContains("G | 湖怪鸟").exists()||textContains("4 | 埋葬之影").exists()||textContains("4 | 齿仙").exists()||textContains("枪 | 美洲驼炮").exists()||textContains("） | 浅坟").exists()||textContains("0 | 迷人幻象").exists()||textContains("枪 | 么么").exists()||textContains("） | 灯神").exists())//||textContains("G | 燕群").exists()
+          else if(textContains("枪 | 奥林匹斯").exists()||textContains("G | 动量").exists()||textContains("AUG（StatTrak™） | 动量").exists()||textContains("） | 吞噬").exists()||textContains("） | 雅典娜之眼").exists()||textContains("R | 经济").exists()||textContains("） | 汪之萌杀").exists()||textContains("） | 小绿怪").exists()||textContains("耍猴把戏").exists()||textContains("） | 荒野公主").exists()||textContains("0 | 浅坟").exists()||textContains("） | 迷人幻象").exists()||textContains("） | 么么").exists()||textContains("G | 湖怪鸟").exists()||textContains("4 | 埋葬之影").exists()||textContains("4 | 齿仙").exists()||textContains("枪 | 美洲驼炮").exists()||textContains("） | 浅坟").exists()||textContains("0 | 迷人幻象").exists()||textContains("枪 | 么么").exists()||textContains("） | 灯神").exists()||textContains("斯 | 雅典娜之眼").exists()||textContains("枪 | 吞噬").exists())//||textContains("G | 燕群").exists()
           {    
               buy003();
               buy008();
@@ -805,7 +805,7 @@ start60();
               toast('00-03,07-10');
               breakbuy();
           }
-          else if(textContains("红色层压板").exists()||textContains("） | 樱花").exists()||textContains("） | 燕群").exists()||textContains("G | 汪之萌杀").exists()||textContains("） | 野蛮剑齿虎").exists()||textContains("0 | 二西莫夫").exists()||textContains("银装素裹").exists()||textContains("） | 齿仙").exists()||textContains("） | 要抱抱").exists()||textContains("0 | 至尊威龙").exists()||textContains("0 | 血腥运动").exists()||textContains("） | 血腥运动").exists()||textContains("4 | 要抱抱").exists()||textContains("） | 正义").exists()||textContains("7 | 正义").exists()||textContains("G | 燕群").exists()||textContains("P | 金粉").exists()||textContains("5 | 野蛮剑齿虎").exists()||textContains("枪 | 吞噬").exists()||textContains("型 | 摩登时代").exists()||textContains("） | 往日行动").exists()||textContains("0 | 往日行动").exists()||textContains("） | 买定离手").exists()||textContains("牛 | 买定离手").exists()||textContains("） | 美洲驼炮").exists()||textContains("斯 | 灯神").exists())      
+          else if(textContains("红色层压板").exists()||textContains("） | 樱花").exists()||textContains("） | 燕群").exists()||textContains("G | 汪之萌杀").exists()||textContains("） | 野蛮剑齿虎").exists()||textContains("0 | 二西莫夫").exists()||textContains("银装素裹").exists()||textContains("） | 齿仙").exists()||textContains("） | 要抱抱").exists()||textContains("0 | 至尊威龙").exists()||textContains("0 | 血腥运动").exists()||textContains("） | 血腥运动").exists()||textContains("4 | 要抱抱").exists()||textContains("） | 正义").exists()||textContains("7 | 正义").exists()||textContains("P | 金粉").exists()||textContains("5 | 野蛮剑齿虎").exists()||textContains("型 | 摩登时代").exists()||textContains("） | 往日行动").exists()||textContains("0 | 往日行动").exists()||textContains("） | 买定离手").exists()||textContains("牛 | 买定离手").exists()||textContains("） | 美洲驼炮").exists()||textContains("斯 | 灯神").exists())      
           {
             buy003();
             buy009();
@@ -813,14 +813,14 @@ start60();
             toast('00-03,07-09');
             breakbuy();
           }
-   else if(textContains("前线迷雾").exists()||textContains("） | 摩登时代").exists()||textContains("） | 大佬龙").exists()||textContains("9 | 爆裂食物").exists()||textContains("鹰 | 机械工业").exists()||textContains("枪 | 荒野公主").exists()||textContains("） | 死神").exists()||textContains("G | 席德.米德").exists()||textContains("） | 磷光体").exists()||textContains("UMP-45（StatTrak™） | 动量").exists()||textContains("） | 席德").exists()||textContains("P | 死神").exists()||textContains("5 | 动量").exists()||textContains("D | 磷光体").exists())//席德
+   else if(textContains("前线迷雾").exists()||textContains("） | 摩登时代").exists()||textContains("） | 大佬龙").exists()||textContains("9 | 爆裂食物").exists()||textContains("鹰 | 机械工业").exists()||textContains("枪 | 荒野公主").exists()||textContains("） | 死神").exists()||textContains("G | 席德.米德").exists()||textContains("） | 磷光体").exists()||textContains("UMP-45（StatTrak™） | 动量").exists()||textContains("） | 席德").exists()||textContains("P | 死神").exists()||textContains("5 | 动量").exists()||textContains("D | 磷光体").exists()||textContains("G | 燕群").exists())//席德
           {
             buy003(); 
             buy008();
             toast('00-03,07-08');
             breakbuy();
           }
-  else if(textContains("） | 爆裂食物").exists()||textContains("法玛斯（StatTrak™） | 机械工业").exists()||textContains("狩猎利器").exists()||textContains("斯 | 机械工业").exists()||textContains("7 | 幻影破坏者").exists()||textContains("7 | 复仇者").exists()||textContains("星 | 樱花").exists()||textContains("斯 | 雅典娜之眼").exists())//text = 法玛斯（StatTrak™） | 机械工业 (略有磨损)||textContains("） | 席德.米德").exists()||
+  else if(textContains("） | 爆裂食物").exists()||textContains("法玛斯（StatTrak™） | 机械工业").exists()||textContains("狩猎利器").exists()||textContains("斯 | 机械工业").exists()||textContains("7 | 幻影破坏者").exists()||textContains("7 | 复仇者").exists()||textContains("星 | 樱花").exists())//text = 法玛斯（StatTrak™） | 机械工业 (略有磨损)||textContains("） | 席德.米德").exists()||
           {
             buy003();
             toast('00-03,07');
@@ -1047,7 +1047,7 @@ else if(textContains("受限").exists())//915
         toast('00-01,07-08');
         breakbuy();
     }
-    else if(textContains("） | 玩具士兵").exists()||textContains("葡萄酒").exists()||textContains("） | 公海").exists()||textContains("） | 蕉").exists()||textContains("） | 权力之心").exists()||textContains("5 | 经济").exists()||textContains("） | 朝枪夕拾").exists()||textContains("） | 魅惑").exists()||textContains("枪 | 疯狂老八").exists()||textContains("7 | 笑一个").exists()||textContains("4 | 蚀刻领主").exists())//
+    else if(textContains("） | 玩具士兵").exists()||textContains("葡萄酒").exists()||textContains("） | 公海").exists()||textContains("） | 蕉").exists()||textContains("） | 权力之心").exists()||textContains("5 | 经济").exists()||textContains("） | 魅惑").exists()||textContains("枪 | 疯狂老八").exists()||textContains("7 | 笑一个").exists()||textContains("4 | 蚀刻领主").exists())//
     {
         buy008();
         buy009(); 
@@ -1081,7 +1081,7 @@ else if(textContains("受限").exists())//915
     //     toast('00-01,07-09');
     //     breakbuy();
     // }
-    else if(textContains("7 | 铋晶体").exists()||textContains("9 | 战火重").exists()||textContains("5 | 红鹰").exists()||textContains("） | 猛虎").exists()||textContains("） | 三位一体").exists()||textContains("0 | 超新星").exists()||textContains("） | 都市冲击").exists()||textContains("） | 超新星").exists()||textContains("UMP-45（StatTrak™） | 城里的月光").exists()||textContains("） | 炼狱小镇").exists()||textContains("7 | 速递").exists()||textContains("9 | 星云十字军").exists()||textContains("） | 高斯").exists()||textContains("） | 阿兹特克").exists()||textContains("） | 五彩斑驳").exists()||textContains("） | 孔雀石").exists()||textContains("0 | 渐变琥珀").exists()||textContains("） | 好兄弟").exists()||textContains("安全网").exists()||textContains("星 | 毒蜥").exists()||textContains("G | 贵族").exists()||textContains("特克卢").exists()||textContains("3 | 豹灯蛾").exists()||textContains("7 | 朝花夕").exists()||textContains("） | 核燃料棒").exists()||textContains("0 | 执行者").exists()||textContains("枪 | 启示录").exists()||textContains("斯 | 神经网").exists()||textContains("5 | 先驱").exists()||textContains("） | 贵族").exists()||textContains("） | 先驱").exists()||textContains("0 | 魅惑").exists())//
+    else if(textContains("7 | 铋晶体").exists()||textContains("9 | 战火重").exists()||textContains("5 | 红鹰").exists()||textContains("） | 猛虎").exists()||textContains("） | 三位一体").exists()||textContains("0 | 超新星").exists()||textContains("） | 都市冲击").exists()||textContains("） | 超新星").exists()||textContains("UMP-45（StatTrak™） | 城里的月光").exists()||textContains("） | 炼狱小镇").exists()||textContains("7 | 速递").exists()||textContains("9 | 星云十字军").exists()||textContains("） | 高斯").exists()||textContains("） | 阿兹特克").exists()||textContains("） | 五彩斑驳").exists()||textContains("） | 孔雀石").exists()||textContains("0 | 渐变琥珀").exists()||textContains("） | 好兄弟").exists()||textContains("安全网").exists()||textContains("星 | 毒蜥").exists()||textContains("G | 贵族").exists()||textContains("特克卢").exists()||textContains("3 | 豹灯蛾").exists()||textContains("7 | 朝花夕").exists()||textContains("） | 核燃料棒").exists()||textContains("0 | 执行者").exists()||textContains("枪 | 启示录").exists()||textContains("斯 | 神经网").exists()||textContains("5 | 先驱").exists()||textContains("） | 贵族").exists()||textContains("） | 先驱").exists()||textContains("） | 朝枪夕拾").exists()||textContains("0 | 魅惑").exists())//
     {
         buy002();
         buy008();
