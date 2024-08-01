@@ -23,7 +23,7 @@ var start60=function()
    while(!click("略有磨损"));
     while(!click("价格区间"));
     setText(0,"1");
-    setText(1,"210");
+    setText(1,"220");
     while(!click("完成"));
     toast('处理完成  开始扫货');
     sleep(1000);
@@ -1022,7 +1022,7 @@ else if(textContains("受限").exists())//915
             toast('00-03,07-08');
             breakbuy();
          }
-    else  if(textContains("版 | 闪回").exists()||textContains("） | 战争手柄").exists()||textContains("） | 赛博先锋").exists()||textContains("） | 石雕").exists()||textContains("） | 毒刺").exists()||textContains("） | 毒蜥").exists()||textContains("） | 曝光").exists()||textContains("） | 幻影").exists()||textContains("9 | 闹市").exists()||textContains("3 | 青龙").exists()||textContains("0 | 给爷冲").exists()||textContains("） | 给爷冲").exists()||textContains("） | 闹市").exists()||textContains("0 | 元女王").exists()||textContains("） | 元女王").exists()||textContains("） | 兄弟连").exists()||textContains("） | 猛烈冲锋").exists()||textContains("） | 凤凰商").exists()||textContains("） | 影魔").exists()||textContains("） | 狂野").exists()||textContains("） | 白狼").exists()||textContains("） | 狮子鱼").exists()||textContains("） | 夺命器").exists()||textContains("疾袭圣甲虫").exists()||textContains("索贝克").exists()||textContains("随机存取").exists())
+    else  if(textContains("） | 聚光灯").exists()||textContains("版 | 闪回").exists()||textContains("） | 战争手柄").exists()||textContains("） | 赛博先锋").exists()||textContains("） | 石雕").exists()||textContains("） | 毒刺").exists()||textContains("） | 毒蜥").exists()||textContains("） | 曝光").exists()||textContains("） | 幻影").exists()||textContains("9 | 闹市").exists()||textContains("3 | 青龙").exists()||textContains("0 | 给爷冲").exists()||textContains("） | 给爷冲").exists()||textContains("） | 闹市").exists()||textContains("0 | 元女王").exists()||textContains("） | 元女王").exists()||textContains("） | 兄弟连").exists()||textContains("） | 猛烈冲锋").exists()||textContains("） | 凤凰商").exists()||textContains("） | 影魔").exists()||textContains("） | 狂野").exists()||textContains("） | 白狼").exists()||textContains("） | 狮子鱼").exists()||textContains("） | 夺命器").exists()||textContains("疾袭圣甲虫").exists()||textContains("索贝克").exists()||textContains("随机存取").exists())
          {
             buy002();
             buy003();
@@ -1031,7 +1031,7 @@ else if(textContains("受限").exists())//915
             toast('00-03,07-09');
             breakbuy();
          }
-         else if(textContains("） | 聚光灯").exists()||textContains("现代猎手").exists()||textContains("核芯破裂").exists()||textContains("鹰 | 深红之网").exists()||textContains("） | 梦之林地").exists()||textContains("） | 行尸攻").exists())
+         else if(textContains("现代猎手").exists()||textContains("核芯破裂").exists()||textContains("鹰 | 深红之网").exists()||textContains("） | 梦之林地").exists()||textContains("） | 行尸攻").exists())
          {
             buy002();
             buy003();
